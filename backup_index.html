@@ -26,6 +26,29 @@
 
 
 
+ <div class="section header-post">
+    <div class="container">
+      <h3>Pramod.Ninja<h3>
+
+      <span class="fa-stack subtlecircle" style="font-size:75px; background:rgba(255,166,0,0.1)">
+        <img class="header-img" src="https://avatars1.githubusercontent.com/u/3299001?v=3&s=460" alt="section icon" />
+      </span>
+
+      <h1>Sumedha Pramod<h1>
+
+      <ul class="list-inline">
+        <li><a href="https://twitter.com/pramodsum" class="btn-circle btn-social"><i class="ion-social-twitter animated"></i></a></li>
+        <li><a href="https://linkedin.com/in/pramodsum" class="btn-circle btn-social"><i class="ion-social-linkedin animated"></i></a></li>
+        <li><a href="https://github.com/pramodsum" class="btn-circle btn-social"><i class="ion-social-github animated"></i></a></li>
+        <li><a href="https://facebook.com/sumedha.pramod" class="btn-circle btn-social"><i class="ion-social-facebook animated"></i></a></li>
+        <li><a href="http://www.pinterest.com/pramodsum/" class="btn-circle btn-social"><i class="ion-social-pinterest animated"></i></a></li>
+        <!-- <li><a href="http://pramod.ninja" class="btn-circle btn-social"><i class="ion-game-controller-b animated"></i></a></li> -->
+        <li><a href="mailto:me@sumninjacode.io" class="btn-circle btn-social"><i class="ion-email animated"></i></a></li>
+      </ul>
+
+    </div>
+  </div>
+
     {% for page in site.posts reversed %}
       {% capture id %}{{ page.id | remove:'/' | downcase }}{% endcapture %}
       <div id="{{id}}" class="section p-{{id}}">
