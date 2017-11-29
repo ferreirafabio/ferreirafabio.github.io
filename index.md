@@ -21,14 +21,14 @@ Invited speaker for the "[Deep Learning Student Talk](https://ferreirafabio.gith
 Bachelor thesis "Optimal Convolutional Neural Network Architectures for Defect Classification in Images", at the Robert Bosch Corporate Research department
 
 ## Other
-* __Made available video2tfrecords, an implementation that emerged from the DeepEpisodicMemory research project__ <br/>
+* __video2tfrecords in Python__ <br/>
 Code available [here](https://github.com/ferreirafabio/video2tfrecords). The implementation allows to easily convert RGB video data (e.g. .avi) to the TensorFlow tfrecords file format with the provided 3 color channels for training e.g. a NN in TensorFlow. Due to common hardware/GPU RAM limitations in Deep Learning, this implementation allows to limit the number of frames per video that are actually stored in the tfrecords. 
 
-* __Python implementation that computes the minimum edit distance for two strings (according to the Wagner-Fischer algorithm)__ <br/>
-Implemented in the context of a cognitive systems class course work. [Code](https://github.com/ferreirafabio/minimum-edit-distance-py)
+* __minimum edit distance in Python__ <br/>
+Python implementation that computes the minimum edit distance for two strings (according to the Wagner-Fischer algorithm). [Code](https://github.com/ferreirafabio/minimum-edit-distance-py)
 
-* __Python algorithm for deciphering a Vigenère-encoded message__ <br/>
-Implemented in the context of a cryptography class course work. [Code](https://github.com/ferreirafabio/vigenere-py) 
+* __Vigenère decipher implementation in Python__ <br/>
+Python algorithm for deciphering a Vigenère-encoded message. Implemented in the context of a cryptography class course work. [Code](https://github.com/ferreirafabio/vigenere-py) 
 
 * __Machine Learning Course Summaries__ <br/>
 Started collecting and scanning summaries about the lecture "Machine Learning 1" at KIT (in German, Syntax: [Chapter Topic])
