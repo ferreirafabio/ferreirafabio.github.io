@@ -22,7 +22,7 @@ Bachelor thesis "Optimal Convolutional Neural Network Architectures for Defect C
 
 ## Other
 * __video2tfrecords in Python__ <br/>
-Code available [here](https://github.com/ferreirafabio/video2tfrecords). The implementation allows to easily convert RGB video data (e.g. .avi) to the TensorFlow tfrecords file format with the provided 3 color channels for training e.g. a NN in TensorFlow. Due to common hardware/GPU RAM limitations in Deep Learning, this implementation allows to limit the number of frames per video that are actually stored in the tfrecords. 
+The implementation allows to easily convert RGB video data (e.g. .avi) to the TensorFlow tfrecords file format with the provided 3 color channels for training e.g. a NN in TensorFlow. Due to common hardware/GPU RAM limitations in Deep Learning, this implementation allows to limit the number of frames per video that are actually stored in the tfrecords. [Code](https://github.com/ferreirafabio/video2tfrecords)
 
 * __minimum edit distance in Python__ <br/>
 Python implementation that computes the minimum edit distance for two strings (according to the Wagner-Fischer algorithm). [Code](https://github.com/ferreirafabio/minimum-edit-distance-py)
