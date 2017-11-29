@@ -19,6 +19,25 @@ Invited speaker for the "[Deep Learning Student Talk](https://ferreirafabio.gith
 + __03/2016-07/2016__ <br/>
 Bachelor thesis "Optimal Convolutional Neural Network Architectures for Defect Classification in Images", at the Robert Bosch Corporate Research department
 
+## Other
+* __Made available video2tfrecords, an implementation that emerged from the DeepEpisodicMemory research project__ <br/>
+Code available [here](https://github.com/ferreirafabio/video2tfrecords). The implementation allows to easily convert RGB video data (e.g. .avi) to the TensorFlow tfrecords file format with the provided 3 color channels for training e.g. a NN in TensorFlow. Due to common hardware/GPU RAM limitations in Deep Learning, this implementation allows to limit the number of frames per video that are actually stored in the tfrecords. 
+
+* __Python implementation that computes the minimum edit distance for two strings (according to the Wagner-Fischer algorithm)__ <br/>
+Implemented in the context of a cognitive systems class course work. [Code](https://github.com/ferreirafabio/minimum-edit-distance-py)
+
+* __Python algorithm for deciphering a Vigenère-encoded message__ <br/>
+Implemented in the context of a cryptography class course work. [Code](https://github.com/ferreirafabio/vigenere-py) 
+
+* __Machine Learning Course Summaries__ <br/>
+Started collecting and scanning summaries about the lecture "Machine Learning 1" at KIT (in German, Syntax: [Chapter Topic])
+  * [05 Reinforcement Learning](https://ferreirafabio.github.io/data/ML1/ReinforcementLearning.pdf)
+  * [06 Support Vector Machine](https://ferreirafabio.github.io/data/ML1/SVM.pdf)
+  * [07 Bayesian Learning](https://ferreirafabio.github.io/data/ML1/LernenNachBayes.pdf)
+  * [08 Hidden Markov Models](https://ferreirafabio.github.io/data/ML1/HiddenMarkovModels.pdf)
+  * [09 Markov Logic Networks](https://ferreirafabio.github.io/data/ML1/MarkovLogicNetze.pdf)
+  * [10 Deductive Learning](https://ferreirafabio.github.io/data/ML1/DeduktivesLernen.pdf)
+
 {::comment}
 ## Publications
 

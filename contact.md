@@ -2,7 +2,8 @@
 layout: default
 is_contact: true
 ---
-* E-Mail: ferreirafabio at mailbox dot org
+## E-Mail
+ferreirafabio at mailbox dot org
 
 
 ## Profiles
