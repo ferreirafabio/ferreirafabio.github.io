@@ -3,7 +3,7 @@ title:       "Fabio Ferreira"
 keywords:    "research, fabio ferreira, ferreira, karlsruhe, kit, deep learning, computer vision, machine learning"
 description: ""
 source_link: "https://ferreirafabio.github.io"
-baseurl: "/researcher"
+#baseurl: ""
 google_analytics_key: UA-87133106-1
 markdown: kramdown
 tracking_id: UA-87133106-1
