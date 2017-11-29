@@ -1,40 +1,11 @@
----
+title: Researcher
+url: "http://ankitsultana.com"
+baseurl: "/researcher"
 
-
-port: 4000
-host: 0.0.0.0
-safe: false
-
-
-### site serving configuration ###
-exclude: [CNAME, README.md, .gitignore]
-permalink: /:title ## disables post output
-timezone: null
-lsi: false
 markdown: kramdown
 
+tracking_id: #
 
-### content configuration ###
-title:       "Fabio Ferreira"
-keywords:    "research, fabio ferreira, ferreira, karlsruhe, kit, deep learning, computer vision, machine learning"
-description: ""
-source_link: "https://github.com/t413/SinglePaged"
-favicon:     "img/favicon.ico"
-touch_icon:  "img/apple-touch-icon.png"
-google_analytics_key: UA-87133106-1
-
-
-### template colors, used site-wide via css ###
-colors:
-  black:     '#111111'
-  white:     '#f8f8f8'
-  blue:      '#49a7e9'
-  green:     '#9bcf2f'
-  purple:    '#c869bf'
-  orange:    '#fab125'
-  turquoise: '#0fbfcf'
-  grey:      '#2a2a2a'
-kramdown:
-  auto_ids:  false
-
-theme: jekyll-theme-hacker
+sass:
+    style: compressed
+    sass_dir: _sass
