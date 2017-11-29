@@ -6,7 +6,7 @@ layout: default
 
 <img class="profile-picture" src="pic.gif">
 
-I'm a computer science / machine learning M. Sc. student at the [Karlsruhe Institute of Technology](https://kit.edu) with interest in machine learning for robotics. From October 2016 until November 2017 I was engaged with a research project at the H2T (High Performance Humanoid Technologies) lab, investigating the value of latent representations created by deep video prediction models and working towards the long-term goal of bringing forth intelligence in robotics. I gained my Computer Science B. Sc. with distinction from the Karlsruhe University of Applied Sciences in September 2016 and I am scholar of the German National Academic Foundation.
+I'm a computer science / machine learning M. Sc. student at the [Karlsruhe Institute of Technology](https://kit.edu) with interest in machine learning for robotics. From October 2016 until November 2017 I was engaged with a research project at the H2T ([High Performance Humanoid Technologies](http://h2t.anthropomatik.kit.edu/english/index.php)) lab, investigating the value of latent representations created by deep video prediction models and working towards the long-term goal of bringing forth intelligence in robotics. I gained my Computer Science B. Sc. with distinction from the Karlsruhe University of Applied Sciences in September 2016 and I am scholar of the German National Academic Foundation.
 
 
 ## Projects
