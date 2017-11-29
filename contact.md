@@ -3,24 +3,12 @@ layout: default
 is_contact: true
 ---
 
-* Email: [foo@xyz.com](mailto:foo@xyz.com)
+__E-Mail:__ <br/>
+ferreirafabio at mailbox dot org
 
-* Phone: [+91-123123](tel:+91-123123)
+* E-Mail: ferreirafabio at mailbox dot org
 
----
 
-## Mailing Address
-
-> 221B, Baker Street
->
-> London
->
-> United Kingdom
-
----
-
-## Social
-
-1. [Facebook](#)
-2. [Twitter](#)
-3. [Google+](#)
+## Profiles
+1. [GitHub](https://github.com/ferreirafabio)
+2. [Twitter](https://twitter.com/FerreiraFabioDE)
