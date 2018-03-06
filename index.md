@@ -5,7 +5,7 @@ layout: default
 ## About Me
 
 <img class="profile-picture" src="pic.gif">
-I'm a computer science / machine learning M. Sc. student at the [Karlsruhe Institute of Technology](https://kit.edu) with interest in machine learning for robotics, which I currently pursue at H2T ([High Performance Humanoid Technologies](http://h2t.anthropomatik.kit.edu/english/index.php)) lab as a research assistant. I gained my Computer Science B. Sc. with distinction from the Karlsruhe University of Applied Sciences in September 2016 and am a scholar of the German National Academic Foundation.
+I'm a computer science / machine learning M. Sc. student at the [Karlsruhe Institute of Technology](https://kit.edu) with interest in machine learning for robotics, which I currently pursue at the H2T lab ([High Performance Humanoid Technologies](http://h2t.anthropomatik.kit.edu/english/index.php)) as a research assistant. I gained my Computer Science B. Sc. with distinction from the Karlsruhe University of Applied Sciences in September 2016 and am a scholar of the German National Academic Foundation.
 
 
 ## Projects
