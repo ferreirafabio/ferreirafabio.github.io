@@ -27,20 +27,15 @@ Bachelor thesis "Optimal Convolutional Neural Network Architectures for Defect C
 ## Coding
 
 + __video feature extraction and fisher vectors__ <br/>
-Jonas and I released a package for video/image feature extraction (ResNet, VGG, SIFT, SURF) that based on the selected feature type, trains a fisher vector GMM and computes the (improved) fisher vectors. One imaginable application is to set-up a feature extractor baseline and benchmark one's approach in a research paper. [[code]](https://github.com/jonasrothfuss/videofeatures) or "pip install videofeatures"
+Released a python package for video/image feature extraction (ResNet, VGG, SIFT, SURF) that based on the selected feature type, trains a fisher vector GMM and computes the (improved) fisher vectors. [[code]](https://github.com/jonasrothfuss/videofeatures) or "pip install videofeatures"
 
 * __video2tfrecord in Python__ <br/>
-The implementation allows to easily convert RGB video data (e.g. .avi) to the TensorFlow tfrecords file format with the provided 3 color channels for training e.g. a NN in TensorFlow. Due to common hardware/GPU RAM limitations in Deep Learning, this implementation allows to limit the number of frames per video that are actually stored in the tfrecords. [[code]](https://github.com/ferreirafabio/video2tfrecords) or "pip install video2tfrecord"
+Released a python package that allows to easily convert RGB video data (e.g. .avi) to the TensorFlow tfrecords file format with the provided 3 color channels for training e.g. a NN in TensorFlow. [[code]](https://github.com/ferreirafabio/video2tfrecords) or "pip install video2tfrecord"
 
-* __minimum edit distance in Python__ <br/>
-Python implementation that computes the minimum edit distance for two strings (according to the Wagner-Fischer algorithm). [[code]](https://github.com/ferreirafabio/minimum-edit-distance-py)
-
-* __Vigenère decipher implementation in Python__ <br/>
-Python algorithm for deciphering a Vigenère-encoded message. Implemented in the context of a cryptography class course work. [[code]](https://github.com/ferreirafabio/vigenere-py) 
 
 ## Other
 + __Probabilistic Planning Course Summaries__ <br/>
-Published an overview of the topics discussed & analyzed in the lecture "Probabilistic Planning" at KIT along with the cue cards I used to prepare for the exam. [[overview]](https://drive.google.com/open?id=1obuBH4ZWYDTdpxf-gKrmK8MvQvDxPivx) [[cue cards]]() (in German, import XML e.g. into BrainYoo2) 
+Published an overview of the topics discussed & analyzed in the lecture "Probabilistic Planning" at KIT along with the cue cards I used to prepare for the exam. [[overview]](https://drive.google.com/open?id=1obuBH4ZWYDTdpxf-gKrmK8MvQvDxPivx)[[cue cards]]() (in German, import XML e.g. into BrainYoo2) 
 
 + __Speaker at the Deep Learning Student Talk__ <br/>
 Invited speaker at the "[Deep Learning Student Talk](https://ferreirafabio.github.io/data/posterdl.pdf)" at the Karlsruhe University of Applied Sciences, presentation and discussion about my Bachelor thesis on CNNs
