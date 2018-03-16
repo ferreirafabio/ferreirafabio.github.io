@@ -40,7 +40,7 @@ Python algorithm for deciphering a Vigenère-encoded message. Implemented in the
 
 ## Other
 + __Probabilistic Planning Course Summaries__ <br/>
-Overview of the topics discussed & analyzed in the lecture "Probabilistic Planning" at KIT (in German) [[overview]](https://drive.google.com/open?id=1obuBH4ZWYDTdpxf-gKrmK8MvQvDxPivx). Also published XML cue cards that I used to prepare for the exam [[cue cards]]() (import e.g. into BrainYoo2) 
+Published an overview of the topics discussed & analyzed in the lecture "Probabilistic Planning" at KIT along with the cue cards I used to prepare for the exam. [[overview]](https://drive.google.com/open?id=1obuBH4ZWYDTdpxf-gKrmK8MvQvDxPivx) [[cue cards]]() (in German, import XML e.g. into BrainYoo2) 
 
 + __Speaker at the Deep Learning Student Talk__ <br/>
 Invited speaker at the "[Deep Learning Student Talk](https://ferreirafabio.github.io/data/posterdl.pdf)" at the Karlsruhe University of Applied Sciences, presentation and discussion about my Bachelor thesis on CNNs
