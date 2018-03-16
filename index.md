@@ -1,5 +1,6 @@
 ---
 layout: default
+title: Fabio Ferreira
 ---
 
 ## About Me
@@ -38,18 +39,16 @@ Python implementation that computes the minimum edit distance for two strings (a
 Python algorithm for deciphering a Vigenère-encoded message. Implemented in the context of a cryptography class course work. [[code]](https://github.com/ferreirafabio/vigenere-py) 
 
 ## Other
++ __Probabilistic Planning Course Summaries__ <br/>
+Overview of the topics discussed & analyzed in the lecture "Probabilistic Planning" at KIT (in German) [[overview]](https://drive.google.com/open?id=1obuBH4ZWYDTdpxf-gKrmK8MvQvDxPivx). Also published XML cue cards that I used to prepare for the exam [[cue cards]]() (import e.g. into BrainYoo2) 
 
-+ __11/2016__ <br/>
-Invited speaker for the "[Deep Learning Student Talk](https://ferreirafabio.github.io/data/posterdl.pdf)" at the Karlsruhe University of Applied Sciences, presentation and discussion about my Bachelor thesis on CNNs
++ __Speaker at the Deep Learning Student Talk__ <br/>
+Invited speaker at the "[Deep Learning Student Talk](https://ferreirafabio.github.io/data/posterdl.pdf)" at the Karlsruhe University of Applied Sciences, presentation and discussion about my Bachelor thesis on CNNs
 
-* __Machine Learning Course Summaries__ <br/>
-Started collecting and scanning summaries about the lecture "Machine Learning 1" at KIT (in German, Syntax: [Chapter Topic])
-  * [05 Reinforcement Learning](https://ferreirafabio.github.io/data/ML1/ReinforcementLearning.pdf)
-  * [06 Support Vector Machine](https://ferreirafabio.github.io/data/ML1/SVM.pdf)
-  * [07 Bayesian Learning](https://ferreirafabio.github.io/data/ML1/LernenNachBayes.pdf)
-  * [08 Hidden Markov Models](https://ferreirafabio.github.io/data/ML1/HiddenMarkovModels.pdf)
-  * [09 Markov Logic Networks](https://ferreirafabio.github.io/data/ML1/MarkovLogicNetze.pdf)
-  * [10 Deductive Learning](https://ferreirafabio.github.io/data/ML1/DeduktivesLernen.pdf)
++ __Machine Learning Course Summaries__ <br/>
+Collection of my summaries from the lecture "Machine Learning 1" at KIT [[summaries]](https://drive.google.com/drive/folders/0B-yrr3JhUpcLMW1FS3NqOGc3N2c?usp=sharing) (in German)
+
+
 
 {::comment}
 ## Publications
