@@ -34,7 +34,7 @@ Released a python package that allows to easily convert RGB video data (e.g. .av
 
 
 ## Other
-+ __Visiting Lecturer for a Machine Learning introductory course at Baden-Wuerrtemberg Cooperative State University <br/>
++ __Visiting Lecturer for a Machine Learning introductory course at Baden-Wuerrtemberg Cooperative State University__<br/>
 from May 2018 until August 2018 along with a fellow student I will be lecturing a machine learning introductory class for business information systems degree students at Baden-Wuerrtemberg Cooperative State University (DHBW Karlsruhe). Lecturing material (.tex and .pdf) will be gradually added to this repo: [[material]](https://github.com/ferreirafabio/Intro_to_ML_DHBW)
 
 
