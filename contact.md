@@ -3,7 +3,7 @@ layout: default
 is_contact: true
 ---
 ## E-Mail
-ferreirafabio at mailbox dot org
+ferreirafabio thefunnysymbol mailbox dot org
 
 
 ## Profiles
