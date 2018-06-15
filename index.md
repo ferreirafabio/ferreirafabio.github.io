@@ -27,15 +27,15 @@ Bachelor thesis "Optimal Convolutional Neural Network Architectures for Defect C
 ## Coding
 
 + __video feature extraction and fisher vectors__ <br/>
-Released a python package for video/image feature extraction (ResNet, VGG, SIFT, SURF) that based on the selected feature type, trains a fisher vector GMM and computes the (improved) fisher vectors. [[code]](https://github.com/jonasrothfuss/videofeatures) or "pip install videofeatures"
+Python package for video/image feature extraction (ResNet, VGG, SIFT, SURF) that, based on the selected feature type, trains a fisher vector GMM and computes (improved) fisher vectors. [[code]](https://github.com/jonasrothfuss/videofeatures) or "pip install videofeatures"
 
 * __video2tfrecord in Python__ <br/>
-Released a python package that allows to easily convert RGB video data (e.g. .avi) to the TensorFlow tfrecords file format with the provided 3 color channels for training e.g. a NN in TensorFlow. [[code]](https://github.com/ferreirafabio/video2tfrecords) or "pip install video2tfrecord"
+Python package that allows to easily convert RGB video data (e.g. .avi) to the TensorFlow tfrecords file format for training e.g. a NN in TensorFlow. [[code]](https://github.com/ferreirafabio/video2tfrecords) or "pip install video2tfrecord"
 
 
 ## Other
 + __Visiting Lecturer for a Machine Learning introductory course at Baden-Wuerrtemberg Cooperative State University__<br/>
-from May 2018 until August 2018 along with a fellow student I will be lecturing a machine learning introductory class for business information systems degree students at Baden-Wuerrtemberg Cooperative State University (DHBW Karlsruhe). Lecturing material (.tex and .pdf) will be gradually added to this repo: [[material]](https://github.com/ferreirafabio/Intro_to_ML_DHBW)
+from May 2018 until August 2018 along with a fellow student I will be lecturing a machine learning introductory class for business information systems degree students at Baden-Wuerrtemberg Cooperative State University (DHBW Karlsruhe). [[lecture material]](https://github.com/ferreirafabio/Intro_to_ML_DHBW)
 
 
 + __Speaker at the Deep Learning Student Talk__ <br/>
