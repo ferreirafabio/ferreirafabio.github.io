@@ -31,11 +31,9 @@ Bachelor thesis "Optimal Convolutional Neural Network Architectures for Defect C
 
 ## Coding
 
-+ __video feature extraction and fisher vectors__ <br/>
-Python package for video/image feature extraction (ResNet, VGG, SIFT, SURF) that, based on the selected feature type, trains a fisher vector GMM and computes (improved) fisher vectors. [[code]](https://github.com/jonasrothfuss/videofeatures) or "pip install videofeatures"
++ **[videofeatures](https://github.com/jonasrothfuss/videofeatures)**, Python package (pip install videofeatures) for video/image feature extraction (ResNet, VGG, SIFT, SURF) that, based on the selected feature type, trains a fisher vector GMM and computes (improved) fisher vectors
 
-* __video2tfrecord in Python__ <br/>
-Python package that allows to easily convert RGB video data (e.g. .avi) to the TensorFlow tfrecords file format for training e.g. a NN in TensorFlow. [[code]](https://github.com/ferreirafabio/video2tfrecords) or "pip install video2tfrecord"
++ **[video2tfrecord](https://github.com/ferreirafabio/video2tfrecords)**, Python package (pip install video2tfrecord) that allows easy conversion of RGB video data to the TensorFlow tfrecords format
 
 
 ## Other
