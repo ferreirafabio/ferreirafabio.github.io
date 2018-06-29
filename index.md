@@ -14,7 +14,7 @@ I'm a computer science / machine learning M. Sc. student at the [Karlsruhe Insti
 3. **F.Ferreira**, N. Link, A. Laubenheimer: Optimal Convolutional Neural Network Architectures for Defect Classification in Images, Bachelor thesis, Robert Bosch Resesarch Department Renningen, Germany, July 2016, undisclosed due to NDA until 2021
 
 
-## Research
+## Recent Research
 
 + __Conditional Density Estimation (12/2017-now)__ <br/>
 This research project's goal is to assess the potential of neural network-based models for density estimation in comparison to kernel-based models (with applications in finance, i.e. risk/asset management)
@@ -22,10 +22,6 @@ This research project's goal is to assess the potential of neural network-based 
 + __Paper implementation (Dragan et al., 2015) "Movement Primitives via Optimization" (01/2018)__ <br/>
 During a research project, a fellow student and I implemented the mathematical concepts of the paper "Movement Primitives via Optimization" (Dragan et al., 2015) and made the code available. [[code]](https://github.com/ferreirafabio/movement_primitives_via_optimization)
 
-+ __Deep Episodic Memory (11/2016-11/2017)__ <br/>
-
-+ __Optimal CNN Architectures for Defect Classification in Images (03/2016-07/2016)__ <br/>
-Bachelor thesis "Optimal Convolutional Neural Network Architectures for Defect Classification in Images", at the Robert Bosch Corporate Research department
 
 ## Coding
 
