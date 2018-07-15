@@ -10,6 +10,7 @@ I'm a computer science / machine learning M. Sc. student at the [Karlsruhe Insti
 
 ## Publications
 1. **F.Ferreira**, J. Rothfuss, E. Aksoy, Y. Zhou, T. Asfour: [Deep Episodic Memory: Encoding, Recalling, and Predicting Episodic Experiences for Robot Action Execution](https://arxiv.org/abs/1801.04134), *IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), Madrid, Spain*, October 2018 [[code]](http://h2t-projects.webarchiv.kit.edu/projects/episodicmemory/)
+{::comment}The contents of this paper were also selected by ICRA'16 Program Committee for presentation at the Conference{:/comment}
 2. **F.Ferreira**, J.Rothfuss, E.Aksoy, Y.Zhou, T. Asfour: [Introducing the Simulated Flying Shapes and Simulated Planar Manipulator Datasets](https://arxiv.org/abs/1807.00703), arXiv:1807.00703, June 2018
 3. **F.Ferreira**, N. Link, A. Laubenheimer: Optimal Convolutional Neural Network Architectures for Defect Classification in Images, Bachelor thesis, Robert Bosch Resesarch Department Renningen, Germany, July 2016, undisclosed due to NDA until 2021
 
