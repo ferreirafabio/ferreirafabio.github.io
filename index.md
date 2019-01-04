@@ -6,7 +6,7 @@ title: Fabio Ferreira
 ## About Me
 
 <img class="profile-picture" src="pic.gif">
-In October 2018, I joined Jeannette Bohg's [IPRL group](http://iprl.stanford.edu) at Stanford AI lab for my master's thesis on graph neural networks. I'm a computer science / machine learning M. Sc. student at the [Karlsruhe Institute of Technology](https://kit.edu) with interest in machine learning for robotics. Before I worked at the H2T lab ([High Performance Humanoid Technologies](http://h2t.anthropomatik.kit.edu/english/index.php)) as a research assistant. I gained my Computer Science B. Sc. with distinction from the Karlsruhe University of Applied Sciences in September 2016 and am a scholar of the German National Academic Foundation.
+In October 2018, I joined the Stanford AI lab for my master's thesis to work in Jeannette Bohg's [IPRL group](http://iprl.stanford.edu) on graph neural networks. I'm a computer science / machine learning M. Sc. student at the [Karlsruhe Institute of Technology](https://kit.edu) with interest in machine learning for robotics. Accompanying my M. Sc., I worked as a research assistant at the H2T lab ([High Performance Humanoid Technologies](http://h2t.anthropomatik.kit.edu/english/index.php)) with focus on robot perception and machine intelligence. I gained my Computer Science B. Sc. with distinction from the Karlsruhe University of Applied Sciences in September 2016 and am a scholar of the German National Academic Foundation.
 
 ## Publications
 1. S. Ottenhaus, D. Renninghoff, R. Grimm, **F.Ferreira**, T. Asfour: Visuo-Haptic Grasping of Unknown Objects based on Gaussian Process Implicit Surfaces and Deep Learning, submitted to ICRA 2019
