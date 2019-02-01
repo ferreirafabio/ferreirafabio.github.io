@@ -28,6 +28,7 @@ During a research project, a fellow student and I implemented the mathematical c
 
 
 ## Coding
++ **[cde](https://github.com/jonasrothfuss/Conditional_Density_Estimation)**, Python package (pip install cde) for conditional density estimation (cde), providing various estimators (parametric NN-based, non-parametric, semi-parametric), density simulators (AR(1), ARMA jump diffusion, GMM etc.) and evaluation metrics (KL divergence, Jensen-shannon divergence and hellinger distance, percentiles, expected shortfall and value-at-risk)
 
 + **[videofeatures](https://github.com/jonasrothfuss/videofeatures)**, Python package (pip install videofeatures) for video/image feature extraction (ResNet, VGG, SIFT, SURF) that, based on the selected feature type, trains a fisher vector GMM and computes (improved) fisher vectors
 
