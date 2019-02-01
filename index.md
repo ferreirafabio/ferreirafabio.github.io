@@ -20,7 +20,7 @@ In October 2018, I joined the Stanford AI lab for my master's thesis to work in 
 
 + __Master's thesis at Stanford University and KIT (10/2018-now)__
 
-+ __Conditional Density Estimation (12/2017-now)__ <br/>
++ __Conditional Density Estimation (12/2017-02/2019)__ <br/>
 This research project's goal is to assess the potential of neural network-based models for density estimation in comparison to kernel-based models (with applications in finance, i.e. risk/asset management)
 
 + __Paper implementation (Dragan et al., 2015) "Movement Primitives via Optimization" (01/2018)__ <br/>
