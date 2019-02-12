@@ -37,7 +37,7 @@ During a research project, a fellow student and I implemented the mathematical c
 
 ## Other
 + __Advising and Co-advising two Bachelor theses at DHBW Karlsruhe__<br/>
-<title tba> (advising, SAP SE), <title tba> (co-advising, Daimler) 
+"title tba" (advising, SAP SE), "title tba" (co-advising, Daimler) 
 
 + __Visiting Lecturer for a Machine Learning introductory course at Baden-Wuerrtemberg Cooperative State University__<br/>
 from May 2018 until August 2018 along with a fellow student I will be lecturing a machine learning introductory class for business information systems degree students at Baden-Wuerrtemberg Cooperative State University (DHBW Karlsruhe). [[lecture material]](https://github.com/ferreirafabio/Intro_to_ML_DHBW)
