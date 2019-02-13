@@ -36,6 +36,9 @@ During a research project, a fellow student and I implemented the mathematical c
 
 
 ## Other
++ __Presentation on Graph Networks__<br/>
+I gave an introduction to Graph Networks in a lab meeting at IPRL. [[Slides]](https://www.dropbox.com/sh/dnjnjggevvxo8jl/AAA5B2f7QP7LW7YIqjYeElvia?dl=0)
+
 + __Advising and Co-advising two Bachelor theses at DHBW Karlsruhe__<br/>
 "title tba" (advising, SAP SE), "title tba" (co-advising, Daimler) 
 
