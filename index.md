@@ -34,25 +34,19 @@ During a research project, a fellow student and I implemented the mathematical c
 
 + **[video2tfrecord](https://github.com/ferreirafabio/video2tfrecord)**, Python package (*pip install video2tfrecord*) that allows easy conversion of RGB video data to the TensorFlow tfrecords format
 
-
-## Other
+## Presentations
 + __Presentation on Graph Networks__<br/>
 I gave an introduction to Graph Networks in a lab meeting at IPRL. [[Slides]](https://www.dropbox.com/sh/dnjnjggevvxo8jl/AAA5B2f7QP7LW7YIqjYeElvia?dl=0)
 
++ __Speaker at the Deep Learning Student Talk__ <br/>
+Invited speaker at the "[Deep Learning Student Talk](https://ferreirafabio.github.io/data/posterdl.pdf)" at the Karlsruhe University of Applied Sciences, presentation and discussion about my Bachelor thesis on CNNs
+
+## Other
 + __Advising and Co-advising two Bachelor theses at DHBW Karlsruhe__<br/>
 "title tba" (advising, SAP SE), "title tba" (co-advising, Daimler) 
 
 + __Visiting Lecturer for a Machine Learning introductory course at Baden-Wuerrtemberg Cooperative State University__<br/>
 from May 2018 until August 2018 along with a fellow student I will be lecturing a machine learning introductory class for business information systems degree students at Baden-Wuerrtemberg Cooperative State University (DHBW Karlsruhe). [[lecture material]](https://github.com/ferreirafabio/Intro_to_ML_DHBW)
-
-
-+ __Speaker at the Deep Learning Student Talk__ <br/>
-Invited speaker at the "[Deep Learning Student Talk](https://ferreirafabio.github.io/data/posterdl.pdf)" at the Karlsruhe University of Applied Sciences, presentation and discussion about my Bachelor thesis on CNNs
-
-+ __Machine Learning Course Summaries__ <br/>
-Collection of my summaries from the lecture "Machine Learning 1" at KIT [[summaries]](https://drive.google.com/drive/folders/0B-yrr3JhUpcLMW1FS3NqOGc3N2c?usp=sharing) (in German)
-
-
 
 {::comment}
 ## Publications
