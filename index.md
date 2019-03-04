@@ -21,12 +21,6 @@ In October 2018, I joined the Stanford AI lab for my master's thesis to work in 
 
 + __Master's thesis at Stanford University and KIT (10/2018-now)__
 
-+ __Conditional Density Estimation (12/2017-02/2019)__ <br/>
-This research project's goal is to assess the potential of neural network-based models for density estimation in comparison to kernel-based models (with applications in finance, i.e. risk/asset management)
-
-+ __Paper implementation (Dragan et al., 2015) "Movement Primitives via Optimization" (01/2018)__ <br/>
-During a research project, a fellow student and I implemented the mathematical concepts of the paper "Movement Primitives via Optimization" (Dragan et al., 2015) and made the code available. [[code]](https://github.com/ferreirafabio/movement_primitives_via_optimization)
-
 
 ## Code and Open-Sourcing
 + **[cde](https://github.com/jonasrothfuss/Conditional_Density_Estimation)**, Python package (*pip install cde*) for conditional density estimation (cde), providing various estimators (parametric NN-based, non-parametric, semi-parametric), density simulators (AR(1), ARMA jump diffusion, GMM etc.) and evaluation metrics (KL divergence, Jensen-shannon divergence and hellinger distance, percentiles, expected shortfall and value-at-risk)
@@ -34,6 +28,8 @@ During a research project, a fellow student and I implemented the mathematical c
 + **[videofeatures](https://github.com/jonasrothfuss/videofeatures)**, Python package (*pip install videofeatures*) for video/image feature extraction (ResNet, VGG, SIFT, SURF) that, based on the selected feature type, trains a fisher vector GMM and computes (improved) fisher vectors
 
 + **[video2tfrecord](https://github.com/ferreirafabio/video2tfrecord)**, Python package (*pip install video2tfrecord*) that allows easy conversion of RGB video data to the TensorFlow tfrecords format
++ __Paper implementation (Dragan et al., 2015) "Movement Primitives via Optimization" (01/2018)__ <br/>
+Implemented the mathematical concepts of the paper "Movement Primitives via Optimization" (Dragan et al., 2015) and made the code available. [[code]](https://github.com/ferreirafabio/movement_primitives_via_optimization)
 
 ## Presentations
 + __Presentation on Graph Networks__<br/>
