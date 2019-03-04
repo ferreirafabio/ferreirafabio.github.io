@@ -28,7 +28,8 @@ In October 2018, I joined the Stanford AI lab for my master's thesis to work in 
 + **[videofeatures](https://github.com/jonasrothfuss/videofeatures)**, Python package (*pip install videofeatures*) for video/image feature extraction (ResNet, VGG, SIFT, SURF) that, based on the selected feature type, trains a fisher vector GMM and computes (improved) fisher vectors
 
 + **[video2tfrecord](https://github.com/ferreirafabio/video2tfrecord)**, Python package (*pip install video2tfrecord*) that allows easy conversion of RGB video data to the TensorFlow tfrecords format
-+ __Paper implementation (Dragan et al., 2015) "Movement Primitives via Optimization" (01/2018)__ <br/>
+
++ __Paper implementation (Dragan et al., 2015) "Movement Primitives via Optimization"__ <br/>
 Implemented the mathematical concepts of the paper "Movement Primitives via Optimization" (Dragan et al., 2015) and made the code available. [[code]](https://github.com/ferreirafabio/movement_primitives_via_optimization)
 
 ## Presentations
