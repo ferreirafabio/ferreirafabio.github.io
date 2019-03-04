@@ -9,7 +9,7 @@ title: Fabio Ferreira
 In October 2018, I joined the Stanford AI lab for my master's thesis to work in Jeannette Bohg's [IPRL group](http://iprl.stanford.edu) on graph neural networks. I'm a computer science / machine learning M. Sc. student at the [Karlsruhe Institute of Technology](https://kit.edu) with interest in machine learning for robotics. Accompanying my M. Sc., I worked as a research assistant at the H2T lab ([High Performance Humanoid Technologies](http://h2t.anthropomatik.kit.edu/english/index.php)) with focus on robot perception and machine intelligence. I gained my Computer Science B. Sc. with distinction from the Karlsruhe University of Applied Sciences in September 2016 and am a scholar of the German National Academic Foundation.
 
 ## Publications
-5. **F. Ferreira\***, J. Rothfuss\*, Simon Walther, Maxim Ulrich: Conditional Density Estimation with Neural Networks, tba, [code, [documentation](https://jonasrothfuss.github.io/Conditional_Density_Estimation)], *equal contribution
+5. **F. Ferreira\***, J. Rothfuss\*, Simon Walther, Maxim Ulrich: Conditional Density Estimation with Neural Networks, tba, [[code](https://github.com/freelunchtheorem/Conditional_Density_Estimation/), [documentation](https://jonasrothfuss.github.io/Conditional_Density_Estimation)], *equal contribution
 4. S. Ottenhaus, D. Renninghoff, R. Grimm, **F.Ferreira**, T. Asfour: Visuo-Haptic Grasping of Unknown Objects based on Gaussian Process Implicit Surfaces and Deep Learning, to be submitted
 3. **F.Ferreira\***, J. Rothfuss\*, E. Aksoy, Y. Zhou, T. Asfour: [Deep Episodic Memory: Encoding, Recalling, and Predicting Episodic Experiences for Robot Action Execution](https://arxiv.org/abs/1801.04134), *IEEE Robotics and Automation Letters, Vol. 3, No. 4, pp. 4007-4014*, October 2018, [[website](http://h2t-projects.webarchiv.kit.edu/Projects/episodicmemory), [code](https://github.com/jonasrothfuss/DeepEpisodicMemory)], The contents of this paper were also selected by IROS'18 Program Committee for presentation at the Conference, *equal contribution
 2. **F.Ferreira\***, J.Rothfuss\*, E.Aksoy, Y.Zhou, T. Asfour: [Introducing the Simulated Flying Shapes and Simulated Planar Manipulator Datasets](https://arxiv.org/abs/1807.00703), arXiv:1807.00703, June 2018, *equal contribution
@@ -43,7 +43,8 @@ Invited speaker at the "[Deep Learning Student Talk](https://ferreirafabio.githu
 
 ## Other
 + __Advising and Co-advising two Bachelor theses at DHBW Karlsruhe__<br/>
-"title tba" (advising, SAP SE), "title tba" (co-advising, Daimler) 
+ + "Conception and development of a prototype to automate the schema matching process by using Word Embeddings" (advising, SAP SE)
+ + "title tba" (co-advising, Daimler) 
 
 + __Visiting Lecturer for a Machine Learning introductory course at Baden-Wuerrtemberg Cooperative State University__<br/>
 from May 2018 until August 2018 along with a fellow student I will be lecturing a machine learning introductory class for business information systems degree students at Baden-Wuerrtemberg Cooperative State University (DHBW Karlsruhe). [[lecture material]](https://github.com/ferreirafabio/Intro_to_ML_DHBW)
