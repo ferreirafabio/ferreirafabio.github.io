@@ -30,11 +30,11 @@ In October 2018, I joined the Stanford AI lab for my master's thesis to work in 
 + **[video2tfrecord](https://github.com/ferreirafabio/video2tfrecord)**, Python package (*pip install video2tfrecord*) that allows easy conversion of RGB video data to the TensorFlow tfrecords format
 
 + __Paper implementation (Dragan et al., 2015) "Movement Primitives via Optimization"__ <br/>
-Implemented the mathematical concepts of the paper "Movement Primitives via Optimization" (Dragan et al., 2015) and made the code available. [[code]](https://github.com/ferreirafabio/movement_primitives_via_optimization)
+Implemented the mathematical concepts of the paper "Movement Primitives via Optimization" (Dragan et al., 2015) and made the code available. [[code](https://github.com/ferreirafabio/movement_primitives_via_optimization)]
 
 ## Presentations
 + __Presentation on Graph Networks__<br/>
-I gave an introduction to Graph Networks in a lab meeting at IPRL. [[Slides]](https://www.dropbox.com/sh/dnjnjggevvxo8jl/AAA5B2f7QP7LW7YIqjYeElvia?dl=0)
+I gave an introduction to Graph Networks in a lab meeting at IPRL. [[slides](https://www.dropbox.com/sh/dnjnjggevvxo8jl/AAA5B2f7QP7LW7YIqjYeElvia?dl=0)]
 
 + __Speaker at the Deep Learning Student Talk__ <br/>
 Invited speaker at the "[Deep Learning Student Talk](https://ferreirafabio.github.io/data/posterdl.pdf)" at the Karlsruhe University of Applied Sciences, presentation and discussion about my Bachelor thesis on CNNs
@@ -45,7 +45,7 @@ Invited speaker at the "[Deep Learning Student Talk](https://ferreirafabio.githu
 - "title tba" (co-advising, Daimler) 
 
 + __Visiting Lecturer for a Machine Learning introductory course at Baden-Wuerrtemberg Cooperative State University__<br/>
-from May 2018 until August 2018 along with a fellow student I will be lecturing a machine learning introductory class for business information systems degree students at Baden-Wuerrtemberg Cooperative State University (DHBW Karlsruhe). [[lecture material]](https://github.com/ferreirafabio/Intro_to_ML_DHBW)
+from May 2018 until August 2018 along with a fellow student I will be lecturing a machine learning introductory class for business information systems degree students at Baden-Wuerrtemberg Cooperative State University (DHBW Karlsruhe). [[lecture material](https://github.com/ferreirafabio/Intro_to_ML_DHBW)]
 
 {::comment}
 ## Publications
