@@ -19,22 +19,22 @@ In October 2018, I joined the Stanford AI lab for my master's thesis to work in 
 
 ## Recent Research
 
-+ __Master's thesis at Stanford University and KIT (10/2018-now)__
++ __Master's thesis at Stanford University and KIT (11/2018-06/2019)__
 
 
 ## Code and Open-Sourcing
-+ **[cde](https://github.com/jonasrothfuss/Conditional_Density_Estimation)**, Python package (*pip install cde*) for conditional density estimation (cde), providing various estimators (parametric NN-based, non-parametric, semi-parametric), density simulators (AR(1), ARMA jump diffusion, GMM etc.) and evaluation metrics (KL divergence, Jensen-shannon divergence and hellinger distance, percentiles, expected shortfall and value-at-risk)
++ **[cde](https://github.com/freelunchtheorem/Conditional_Density_Estimation)**, Python package (with over 3k downloads/month) for conditional density estimation with neural network-based, non/semi-parametric and normalizing flow estimators, various data generating processes (AR(1), ARMA jump diffusion, GMM etc.) and evaluation metrics (KL and JS divergence, hellinger distance, percentiles, expected shortfall and value-at-risk), 
 
 + **[videofeatures](https://github.com/jonasrothfuss/videofeatures)**, Python package (*pip install videofeatures*) for video/image feature extraction (ResNet, VGG, SIFT, SURF) that, based on the selected feature type, trains a fisher vector GMM and computes (improved) fisher vectors
 
 + **[video2tfrecord](https://github.com/ferreirafabio/video2tfrecord)**, Python package (*pip install video2tfrecord*) that allows easy conversion of RGB video data to the TensorFlow tfrecords format
 
-+ __Paper implementation (Dragan et al., 2015) "Movement Primitives via Optimization"__ <br/>
-Implemented the mathematical concepts of the paper "Movement Primitives via Optimization" (Dragan et al., 2015) and made the code available. [[code](https://github.com/ferreirafabio/movement_primitives_via_optimization)]
++ __[Paper implementation (Dragan et al., 2015) "Movement Primitives via Optimization"](https://github.com/ferreirafabio/movement_primitives_via_optimization)__ <br/>
+Implemented the mathematical concepts of the paper "Movement Primitives via Optimization" (Dragan et al., 2015) and made the code available
 
 ## Presentations
 + __Presentation on Graph Networks__<br/>
-I gave an introduction to Graph Networks in a lab meeting at IPRL. [[slides](https://www.dropbox.com/sh/dnjnjggevvxo8jl/AAA5B2f7QP7LW7YIqjYeElvia?dl=0)]
+I gave an introduction to Graph Networks in a lab meeting at IPRL [[slides](https://www.dropbox.com/sh/dnjnjggevvxo8jl/AAA5B2f7QP7LW7YIqjYeElvia?dl=0)]
 
 + __Speaker at the Deep Learning Student Talk__ <br/>
 Invited speaker at the "[Deep Learning Student Talk](https://ferreirafabio.github.io/data/posterdl.pdf)" at the Karlsruhe University of Applied Sciences, presentation and discussion about my Bachelor thesis on CNNs
@@ -42,7 +42,6 @@ Invited speaker at the "[Deep Learning Student Talk](https://ferreirafabio.githu
 ## Other
 + __Advising and Co-advising two Bachelor theses at DHBW Karlsruhe__<br/>
 - "Conception and development of a prototype to automate the schema matching process by using Word Embeddings" (advising, SAP SE)
-- "title tba" (co-advising, Daimler) 
 
 + __Visiting Lecturer for a Machine Learning introductory course at Baden-Wuerrtemberg Cooperative State University__<br/>
 from May 2018 until August 2018 along with a fellow student I will be lecturing a machine learning introductory class for business information systems degree students at Baden-Wuerrtemberg Cooperative State University (DHBW Karlsruhe). [[lecture material](https://github.com/ferreirafabio/Intro_to_ML_DHBW)]
