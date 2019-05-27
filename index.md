@@ -22,12 +22,16 @@ In October 2018, I joined the Stanford AI lab for my master's thesis to work in 
 + __Conducting research for my Master's thesis at Stanford University and KIT on Graph Neural Networks (11/2018-06/2019)__
 
 
-## Code and Open-Sourcing
+## Coding and Open-Sourcing
 + **[cde](https://github.com/freelunchtheorem/Conditional_Density_Estimation)**, Python package (with over 3k downloads per month) for conditional density estimation with neural network-based, non/semi-parametric and normalizing flow estimators, various data generating processes (AR(1), ARMA jump diffusion, GMM etc.) and evaluation metrics (KL and JS divergence, hellinger distance, percentiles, expected shortfall and value-at-risk) 
 
 + **[videofeatures](https://github.com/jonasrothfuss/videofeatures)**, Python package (*pip install videofeatures*) for video/image feature extraction (ResNet, VGG, SIFT, SURF) that, based on the selected feature type, trains a fisher vector GMM and computes (improved) fisher vectors
 
 + **[video2tfrecord](https://github.com/ferreirafabio/video2tfrecord)**, Python package (*pip install video2tfrecord*) that allows easy conversion of RGB video data to the TensorFlow tfrecords format
+
++ **[Planar Manipulatior Dataset](https://github.com/ferreirafabio/PlanarManipulatorDataset)**, goal-oriented 2D toy dataset for deep neural network testing
+
++ **[Flying Shapes Dataset](https://github.com/ferreirafabio/FlyingShapesDataset)**, goal-oriented 2D toy dataset for deep neural network testing
 
 + __[Paper implementation (Dragan et al., 2015) "Movement Primitives via Optimization"](https://github.com/ferreirafabio/movement_primitives_via_optimization)__ <br/>
 Implemented the mathematical concepts of the paper "Movement Primitives via Optimization" (Dragan et al., 2015) and made the code available
