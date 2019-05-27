@@ -23,7 +23,7 @@ In October 2018, I joined the Stanford AI lab for my master's thesis to work in 
 
 
 ## Coding and Open-Sourcing
-+ **[cde](https://github.com/freelunchtheorem/Conditional_Density_Estimation)**, Python package (with over 3k downloads per month) for conditional density estimation with neural network-based, non/semi-parametric and normalizing flow estimators, various data generating processes (AR(1), ARMA jump diffusion, GMM etc.) and evaluation metrics (KL and JS divergence, hellinger distance, percentiles, expected shortfall and value-at-risk) 
++ **[cde](https://github.com/freelunchtheorem/Conditional_Density_Estimation)**, Python package (with over 3k downloads per month) for conditional density estimation with neural network-based, non/semi-parametric and normalizing flow estimators, various data generating processes (AR(1), ARMA jump diffusion, GMM etc.) and evaluation metrics (KL and JS divergence, hellinger distance, etc.) 
 
 + **[videofeatures](https://github.com/jonasrothfuss/videofeatures)**, Python package (*pip install videofeatures*) for video/image feature extraction (ResNet, VGG, SIFT, SURF) that, based on the selected feature type, trains a fisher vector GMM and computes (improved) fisher vectors
 
