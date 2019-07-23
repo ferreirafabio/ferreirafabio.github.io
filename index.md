@@ -6,7 +6,7 @@ title: Fabio Ferreira
 ## About Me
 
 <img class="profile-picture" src="pic.gif">
-In October 2018, I joined the Stanford AI lab for my master's thesis to work in Jeannette Bohg's [IPRL group](http://iprl.stanford.edu) on graph neural networks. I'm a computer science / machine learning M. Sc. student at the [Karlsruhe Institute of Technology](https://kit.edu) with interest in machine learning for robotics. Accompanying my M. Sc., I worked as a research assistant at the H2T lab ([High Performance Humanoid Technologies](http://h2t.anthropomatik.kit.edu/english/index.php)) with focus on robot perception and machine intelligence. I gained my Computer Science B. Sc. with distinction from the Karlsruhe University of Applied Sciences in September 2016 and am a scholar of the German National Academic Foundation.
+In late October 2018, I joined the Stanford AI lab for my master's thesis to work in Jeannette Bohg's [IPRL group](http://iprl.stanford.edu) on graph neural networks. I'm a computer science / machine learning M. Sc. student at the [Karlsruhe Institute of Technology](https://kit.edu) with interest in machine learning for robotics. Accompanying my M. Sc., I worked as a research assistant at the H2T lab ([High Performance Humanoid Technologies](http://h2t.anthropomatik.kit.edu/english/index.php)) with focus on robot perception and machine intelligence. I gained my Computer Science B. Sc. with distinction from the Karlsruhe University of Applied Sciences in September 2016 and am a scholar of the German National Academic Foundation.
 
 ## Pre-Prints and Publications
 7. J. Rothfuss, **F. Ferreira**, S. Boehm, S. Walther, M. Ulrich, T. Asfour, A. Krause: [Noise Regularization for Conditional Density Estimation](https://arxiv.org/abs/1907.08982), submitted to ICLR 2020, [website, [code]](https://github.com/freelunchtheorem/Conditional_Density_Estimation)
@@ -16,12 +16,6 @@ In October 2018, I joined the Stanford AI lab for my master's thesis to work in 
 3. **F.Ferreira***, J. Rothfuss*, E. Aksoy, Y. Zhou, T. Asfour: [Deep Episodic Memory: Encoding, Recalling, and Predicting Episodic Experiences for Robot Action Execution](https://arxiv.org/abs/1801.04134), *IEEE Robotics and Automation Letters, Vol. 3, No. 4, pp. 4007-4014*, October 2018, [[website](http://h2t-projects.webarchiv.kit.edu/Projects/episodicmemory), [code](https://github.com/jonasrothfuss/DeepEpisodicMemory)], The contents of this paper were also selected by IROS'18 Program Committee for presentation at the Conference
 2. **F.Ferreira***, J.Rothfuss*, E.Aksoy, Y.Zhou, T. Asfour: [Introducing the Simulated Flying Shapes and Simulated Planar Manipulator Datasets](https://arxiv.org/abs/1807.00703), arXiv:1807.00703, June 2018
 1. **F.Ferreira**, N. Link, A. Laubenheimer: Optimal Convolutional Neural Network Architectures for Defect Classification in Images, Bachelor thesis, Robert Bosch Resesarch Department Renningen, Germany, July 2016, undisclosed due to NDA until 2021
-
-
-## Recent
-
-+ __Conducting research for my Master's thesis at Stanford University and KIT on Graph Neural Networks (11/2018-06/2019)__
-
 
 ## Coding and Open-Sourcing
 + **[cde](https://github.com/freelunchtheorem/Conditional_Density_Estimation)**, Python package (with over 3k downloads per month) for conditional density estimation with neural network-based, non/semi-parametric and normalizing flow estimators, various data generating processes (AR(1), ARMA jump diffusion, GMM etc.) and evaluation metrics (KL and JS divergence, hellinger distance, etc.) 
