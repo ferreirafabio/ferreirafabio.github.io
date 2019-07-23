@@ -18,7 +18,7 @@ In late October 2018, I joined the Stanford AI lab for my master's thesis to wor
 1. **F.Ferreira**, N. Link, A. Laubenheimer: Optimal Convolutional Neural Network Architectures for Defect Classification in Images, Bachelor thesis, Robert Bosch Resesarch Department Renningen, Germany, July 2016, undisclosed due to NDA until 2021
 
 ## Coding and Open-Sourcing
-+ **[Paper implementation "Information Theoretic MPC for Model-Based Reinforcement Learning" (Williams et al., 2017)](https://github.com/ferreirafabio/mppi_pendulum)
++ __[Paper implementation "Information Theoretic MPC for Model-Based Reinforcement Learning" (Williams et al., 2017)](https://github.com/ferreirafabio/mppi_pendulum)__
 
 + **[cde](https://github.com/freelunchtheorem/Conditional_Density_Estimation)**, Python package (with over 3k downloads per month) for conditional density estimation with neural network-based, non/semi-parametric and normalizing flow estimators, various data generating processes (AR(1), ARMA jump diffusion, GMM etc.) and evaluation metrics (KL and JS divergence, hellinger distance, etc.) 
 
