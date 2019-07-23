@@ -18,6 +18,8 @@ In late October 2018, I joined the Stanford AI lab for my master's thesis to wor
 1. **F.Ferreira**, N. Link, A. Laubenheimer: Optimal Convolutional Neural Network Architectures for Defect Classification in Images, Bachelor thesis, Robert Bosch Resesarch Department Renningen, Germany, July 2016, undisclosed due to NDA until 2021
 
 ## Coding and Open-Sourcing
++ **[Paper implementation "Information Theoretic MPC for Model-Based Reinforcement Learning" (Williams et al., 2017)](https://github.com/ferreirafabio/mppi_pendulum)
+
 + **[cde](https://github.com/freelunchtheorem/Conditional_Density_Estimation)**, Python package (with over 3k downloads per month) for conditional density estimation with neural network-based, non/semi-parametric and normalizing flow estimators, various data generating processes (AR(1), ARMA jump diffusion, GMM etc.) and evaluation metrics (KL and JS divergence, hellinger distance, etc.) 
 
 + **[videofeatures](https://github.com/jonasrothfuss/videofeatures)**, Python package (*pip install videofeatures*) for video/image feature extraction (ResNet, VGG, SIFT, SURF) that, based on the selected feature type, trains a fisher vector GMM and computes (improved) fisher vectors
@@ -28,8 +30,7 @@ In late October 2018, I joined the Stanford AI lab for my master's thesis to wor
 
 + **[Flying Shapes Dataset](https://github.com/ferreirafabio/FlyingShapesDataset)**, goal-oriented 2D toy dataset for deep neural network testing
 
-+ __[Paper implementation (Dragan et al., 2015) "Movement Primitives via Optimization"](https://github.com/ferreirafabio/movement_primitives_via_optimization)__ <br/>
-Implemented the mathematical concepts of the paper "Movement Primitives via Optimization" (Dragan et al., 2015) and made the code available
++ __[Paper implementation "Movement Primitives via Optimization" (Dragan et al., 2015)](https://github.com/ferreirafabio/movement_primitives_via_optimization)__ <br/>
 
 ## Presentations
 + __Presentation on Graph Networks__<br/>
