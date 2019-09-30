@@ -36,7 +36,7 @@ In late October 2018, I joined the Stanford AI lab for my master's thesis to wor
 
 ## Talks
 + __Talk at Max Plank Institute for Intelligent Systems (09/19)__<br/>
-I gave a [[talk]](https://ps.is.tuebingen.mpg.de/talks/learning-visual-dynamics-models-of-rigid-objects-using-relational-inductive-biases) about my work at the Perceiving Systems department
+I gave a [talk](https://ps.is.tuebingen.mpg.de/talks/learning-visual-dynamics-models-of-rigid-objects-using-relational-inductive-biases) about my work at the Perceiving Systems department
 
 + __Presentation on Graph Networks (01/19)__<br/>
 I gave an introduction to Graph Networks in a lab meeting at IPRL [[slides](https://www.dropbox.com/sh/dnjnjggevvxo8jl/AAA5B2f7QP7LW7YIqjYeElvia?dl=0)]
