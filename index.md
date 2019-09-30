@@ -45,8 +45,7 @@ I gave an introduction to Graph Networks in a lab meeting at IPRL [[slides](http
 Invited speaker at the "[Deep Learning Student Talk](https://ferreirafabio.github.io/data/posterdl.pdf)" at the Karlsruhe University of Applied Sciences, presentation and discussion about my Bachelor thesis on CNNs
 
 ## Other
-+ __Advising and Co-advising two Bachelor theses at DHBW Karlsruhe__<br/>
-- "Conception and development of a prototype to automate the schema matching process by using Word Embeddings" (advising, SAP SE)
++ __Advising and Co-advising two Bachelor theses at SAP SE and Daimler AG (2019)__<br/>
 
 + __Visiting Lecturer for a Machine Learning introductory course at Baden-Wuerrtemberg Cooperative State University__<br/>
 from May 2018 until August 2018 along with a fellow student I will be lecturing a machine learning introductory class for business information systems degree students at Baden-Wuerrtemberg Cooperative State University (DHBW Karlsruhe). [[lecture material](https://github.com/ferreirafabio/Intro_to_ML_DHBW)]
