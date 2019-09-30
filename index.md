@@ -34,11 +34,14 @@ In late October 2018, I joined the Stanford AI lab for my master's thesis to wor
 
 + __[Paper implementation "Movement Primitives via Optimization" (Dragan et al., 2015)](https://github.com/ferreirafabio/movement_primitives_via_optimization)__ <br/>
 
-## Presentations
-+ __Presentation on Graph Networks__<br/>
+## Talks
++ __Talk at Max Plank Institute for Intelligent Systems (09/19)__<br/>
+I gave a [[talk]](https://ps.is.tuebingen.mpg.de/talks/learning-visual-dynamics-models-of-rigid-objects-using-relational-inductive-biases) about my work at the Perceiving Systems department
+
++ __Presentation on Graph Networks (01/19)__<br/>
 I gave an introduction to Graph Networks in a lab meeting at IPRL [[slides](https://www.dropbox.com/sh/dnjnjggevvxo8jl/AAA5B2f7QP7LW7YIqjYeElvia?dl=0)]
 
-+ __Speaker at the Deep Learning Student Talk__ <br/>
++ __Speaker at the Deep Learning Student Talk (11/16)__ <br/>
 Invited speaker at the "[Deep Learning Student Talk](https://ferreirafabio.github.io/data/posterdl.pdf)" at the Karlsruhe University of Applied Sciences, presentation and discussion about my Bachelor thesis on CNNs
 
 ## Other
