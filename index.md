@@ -6,7 +6,9 @@ title: Fabio Ferreira
 ## About Me
 
 <img class="profile-picture" src="pic.gif">
-I'm a PhD student in Frank Hutter's [Machine Learning Lab](https://ml.informatik.uni-freiburg.de/) where I focus on meta-learning for efficient knowledge transfer and other automated machine learning-related topics. Previously, I joined the Stanford AI lab for my master's thesis to work in Jeannette Bohg's [IPRL group](http://iprl.stanford.edu) on graph neural networks and robotic manipulation. As a student research assistant, I also worked at Tamim Asfour's [H2T lab](http://h2t.anthropomatik.kit.edu/english/index.php) with focus on cognitive robotics and robot perception. I hold a M. Sc. from KIT in CS/Machine Learning and am alumnus of the German National Academic Scholarship Foundation. Follow me on [Twitter](https://twitter.com/artificialfabio), [LinkedIn](https://www.linkedin.com/in/ferreira-fabio/) for research-related updates or [Instagram](https://www.instagram.com/artificialfabio/) for a mix of travel and research-related content. 
+I'm a PhD student in Frank Hutter's [Machine Learning Lab](https://ml.informatik.uni-freiburg.de/) where I focus on meta-learning for efficient knowledge transfer and other automated machine learning-related topics. Previously, I joined the Stanford AI lab for my master's thesis to work in Jeannette Bohg's [IPRL group](http://iprl.stanford.edu) on graph neural networks and robotic manipulation. As a student research assistant, I also worked at Tamim Asfour's [H2T lab](http://h2t.anthropomatik.kit.edu/english/index.php) with focus on cognitive robotics and robot perception. I hold a M. Sc. from KIT in CS/Machine Learning and am alumnus of the German National Academic Scholarship Foundation. 
+
+Follow me on [Twitter](https://twitter.com/artificialfabio), [LinkedIn](https://www.linkedin.com/in/ferreira-fabio/) for research-related updates or [Instagram](https://www.instagram.com/artificialfabio/) for a mix of travel and research-related content. 
 
 ## Publications
 For an up-to-date publication record, please check out my [Google Scholar](https://scholar.google.com/citations?user=LFtEAeYAAAAJ&hl=en) profile.
