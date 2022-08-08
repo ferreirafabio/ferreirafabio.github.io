@@ -28,7 +28,7 @@ For an up-to-date publication record, please check out my [Google Scholar](https
 %## Theses
 %2. **F.Ferreira**, Learning Dynamics Models of Rigid Objects from Image Input using Relational Inductive Biases, *Master's thesis*, September 2019 [pdf, [website](https://sites.google.com/view/dynamicsmodels)]
 %1. **F.Ferreira**, Optimal Convolutional Neural Network Architectures for Defect Classification in Images, *Bachelor's thesis*, Robert Bosch Resesarch Department Renningen, Germany, July 2016, undisclosed due to NDA until 2021, [pdf]
-{::/comment}
+{:/comment}
 
 ## Coding and Open-Sourcing
 + __[Paper implementation "Information Theoretic MPC for Model-Based Reinforcement Learning" (Williams et al., 2017)](https://github.com/ferreirafabio/mppi_pendulum)__
