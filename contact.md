@@ -2,10 +2,4 @@
 layout: default
 is_contact: true
 ---
-## E-Mail
-ferreirafabio at mailbox dot org
-
-
-## Profiles
-1. [GitHub](https://github.com/ferreirafabio)
-2. [Twitter](https://twitter.com/FerreiraFabioDE)
+ferreirafabio at mailbox dot org or via [GitHub](https://github.com/ferreirafabio)

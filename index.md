@@ -6,11 +6,8 @@ title: Fabio Ferreira
 ## About Me
 
 <img class="profile-picture" src="pic.gif">
-I'm a PhD student in Frank Hutter's [Machine Learning Lab](https://ml.informatik.uni-freiburg.de/) where I focus on meta-learning for efficient knowledge transfer and other automated machine learning-related topics. Previously, I joined the Stanford AI lab for my master's thesis to work in Jeannette Bohg's [IPRL group](http://iprl.stanford.edu) on graph neural networks and robotic manipulation. As a student research assistant, I also worked at Tamim Asfour's [H2T lab](http://h2t.anthropomatik.kit.edu/english/index.php) with focus on cognitive robotics and robot perception. I hold a M. Sc. from KIT in CS/Machine Learning and am alumnus of the German National Academic Scholarship Foundation. 
+I'm a Postdoctoral Reseacher in Frank Hutter's [Machine Learning Lab](https://ml.informatik.uni-freiburg.de/). Previously, I joined the Stanford AI lab for my master's thesis to work in Jeannette Bohg's [IPRL group](http://iprl.stanford.edu) on graph neural networks and robotic manipulation. As a student research assistant, I also worked at Tamim Asfour's [H2T lab](http://h2t.anthropomatik.kit.edu/english/index.php) with focus on cognitive robotics and robot perception. I hold a M. Sc. from KIT in CS/Machine Learning and am alumnus of the German National Academic Scholarship Foundation. 
 
-### Social Platforms
-
-Follow me on [Twitter](https://twitter.com/artificialfabio), [LinkedIn](https://www.linkedin.com/in/ferreira-fabio/) for research-related updates or [Instagram](https://www.instagram.com/artificialfabio/) for a mix of travel and research-related content. 
 
 ## Publications
 For an up-to-date publication record, please check out my [Google Scholar](https://scholar.google.com/citations?user=LFtEAeYAAAAJ&hl=en) profile.
@@ -49,6 +46,7 @@ For an up-to-date publication record, please check out my [Google Scholar](https
 
 + __[Paper implementation "Movement Primitives via Optimization" (Dragan et al., 2015)](https://github.com/ferreirafabio/movement_primitives_via_optimization)__ <br/>
 
+{::comment}
 ## Talks
 + __Talk at Max Plank Institute for Intelligent Systems (09/19)__<br/>
 I gave a [talk](https://ps.is.tuebingen.mpg.de/talks/learning-visual-dynamics-models-of-rigid-objects-using-relational-inductive-biases) about my work at the Perceiving Systems department
@@ -64,6 +62,7 @@ Invited speaker at the "[Deep Learning Student Talk](https://ferreirafabio.githu
 
 + __Visiting Lecturer for a Machine Learning introductory course at Baden-Wuerrtemberg Cooperative State University__<br/>
 from May 2018 until August 2018 along with a fellow student I will be lecturing a machine learning introductory class for business information systems degree students at Baden-Wuerrtemberg Cooperative State University (DHBW Karlsruhe). [[lecture material](https://github.com/ferreirafabio/Intro_to_ML_DHBW)]
+{:/comment}
 
 {::comment}
 ## Publications
