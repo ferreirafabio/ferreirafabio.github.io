@@ -96,26 +96,40 @@
   }
 
   .featured-banner {
-    background: linear-gradient(135deg, #E91E63, #C2185B);
-    color: white; padding: 1.2em 1.5em;
-    border-radius: 12px; margin: 1.5em 0 2em;
-    box-shadow: 0 4px 14px rgba(233, 30, 99, 0.2);
+    background: white;
+    color: #333;
+    padding: 0.95em 1.2em;
+    border-radius: 10px;
+    border-left: 3px solid #E91E63;
+    margin: 1.2em 0 1.8em;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.04);
     animation: fadeInUp 0.8s ease-out 0.05s both;
     text-decoration: none;
     display: block;
+    transition: all 0.2s ease;
   }
-  .featured-banner:hover { transform: translateY(-2px); transition: transform 0.2s; }
+  .featured-banner:hover {
+    box-shadow: 0 4px 14px rgba(233, 30, 99, 0.12);
+    transform: translateY(-1px);
+  }
   .featured-banner .tag {
-    display: inline-block; background: rgba(255,255,255,0.2);
-    padding: 0.2em 0.8em; border-radius: 20px;
-    font-size: 0.72em; font-weight: 600; letter-spacing: 0.05em;
-    text-transform: uppercase; margin-bottom: 0.5em;
+    display: inline-block;
+    background: #E91E63; color: white;
+    padding: 0.12em 0.55em; border-radius: 20px;
+    font-size: 0.66em; font-weight: 700;
+    letter-spacing: 0.08em; text-transform: uppercase;
+    margin-right: 0.55em; vertical-align: middle;
+    position: relative; top: -1px;
   }
   .featured-banner h3 {
-    margin: 0 0 0.3em; font-size: 1.15em; font-weight: 600; color: white;
+    display: inline; margin: 0;
+    font-size: 0.98em; font-weight: 600; color: #0f0f0f;
   }
-  .featured-banner p { margin: 0; opacity: 0.92; font-size: 0.9em; }
-  .featured-banner .arrow { opacity: 0.8; }
+  .featured-banner p {
+    margin: 0.35em 0 0;
+    color: #666; font-size: 0.85em;
+  }
+  .featured-banner .arrow { color: #E91E63; font-weight: 600; }
 
   footer {
     margin-top: 3em; padding-top: 1.5em;
@@ -147,9 +161,8 @@
 </header>
 
 <a href="https://ferreirafabio.github.io/autoresearch-automl" class="featured-banner">
-  <span class="tag">Featured · Interactive Demo</span>
-  <h3>Can LLMs Beat Classical HPO? A Study on autoresearch <span class="arrow">→</span></h3>
-  <p>Benchmarking 9 HPO methods (classical, LLM-based, and a CMA-ES+LLM hybrid) on Karpathy's autoresearch task.</p>
+  <span class="tag">New</span><h3>Can LLMs Beat Classical HPO? A Study on autoresearch <span class="arrow">→</span></h3>
+  <p>Interactive demo: benchmarking 9 HPO methods on Karpathy's autoresearch task.</p>
 </a>
 
 <div id="content">
