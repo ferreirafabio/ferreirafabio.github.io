@@ -1,0 +1,233 @@
+:root {
+    --bg: #fafafa;
+    --panel: #ffffff;
+    --border: #e1e4e8;
+    --text: #1f2328;
+    --muted: #57606a;
+    --accent: #0969da;
+    --accent-hover: #0550ae;
+    --code-bg: #f6f8fa;
+    --base-color: #6f42c1;
+    --sft-baseline-color: #cf222e;
+    --a75-color: #1a7f37;
+    --a25-color: #bf8700;
+}
+
+* { box-sizing: border-box; }
+
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.5;
+}
+
+header {
+    background: var(--panel);
+    border-bottom: 1px solid var(--border);
+    padding: 1.5rem 2rem;
+}
+
+header h1 {
+    margin: 0 0 0.5rem;
+    font-size: 1.5rem;
+}
+
+header .sub {
+    margin: 0 0 0.5rem;
+    color: var(--muted);
+    max-width: 80ch;
+}
+
+header .meta {
+    margin: 0;
+    color: var(--muted);
+    font-size: 0.85rem;
+}
+
+header a {
+    color: var(--accent);
+    text-decoration: none;
+}
+
+header a:hover { text-decoration: underline; }
+
+.controls {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    padding: 1rem 2rem;
+    background: var(--panel);
+    border-bottom: 1px solid var(--border);
+    align-items: flex-start;
+}
+
+.control {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    min-width: 180px;
+}
+
+.control label {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--muted);
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+}
+
+select {
+    padding: 0.4rem 0.6rem;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    background: var(--panel);
+    font-size: 0.9rem;
+    font-family: inherit;
+    min-width: 180px;
+    max-width: 420px;
+}
+
+.checkboxes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem 0.75rem;
+    padding: 0.4rem 0;
+}
+
+.checkboxes label {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    font-size: 0.85rem;
+    cursor: pointer;
+    text-transform: none;
+    letter-spacing: 0;
+    color: var(--text);
+    font-weight: 400;
+}
+
+.prompt-display {
+    margin: 1rem 2rem;
+    padding: 1rem 1.25rem;
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+}
+
+.prompt-header {
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: var(--muted);
+    margin-bottom: 0.5rem;
+}
+
+.prompt-text {
+    white-space: pre-wrap;
+    word-break: break-word;
+    font-size: 0.95rem;
+}
+
+main {
+    padding: 0 2rem 3rem;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+    gap: 1rem;
+}
+
+.card {
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 1rem 1.25rem;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.6rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--border);
+}
+
+.card-title {
+    font-weight: 600;
+    font-size: 0.95rem;
+}
+
+.group-tag {
+    display: inline-block;
+    padding: 0.1rem 0.5rem;
+    border-radius: 12px;
+    color: white;
+    font-size: 0.7rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+}
+
+.group-base { background: var(--base-color); }
+.group-sft-baseline { background: var(--sft-baseline-color); }
+.group-A-75en { background: var(--a75-color); }
+.group-A-25en { background: var(--a25-color); }
+
+.step-slider {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    margin-top: 0.4rem;
+}
+
+.step-slider input[type=range] { flex: 1; }
+
+.step-slider .step-label {
+    font-size: 0.8rem;
+    color: var(--muted);
+    font-variant-numeric: tabular-nums;
+    min-width: 5rem;
+    text-align: right;
+}
+
+.completion {
+    white-space: pre-wrap;
+    word-break: break-word;
+    font-size: 0.9rem;
+    line-height: 1.55;
+    flex: 1;
+}
+
+.completion.empty {
+    color: var(--muted);
+    font-style: italic;
+}
+
+.progression-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+footer {
+    border-top: 1px solid var(--border);
+    padding: 1rem 2rem;
+    color: var(--muted);
+    font-size: 0.8rem;
+    background: var(--panel);
+}
+
+footer code {
+    background: var(--code-bg);
+    padding: 0.05rem 0.35rem;
+    border-radius: 4px;
+    font-size: 0.8rem;
+}

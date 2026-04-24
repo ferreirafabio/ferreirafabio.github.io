@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>oellm-completions — Dolci-Translated qualitative outputs</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Dolci-Translated qualitative completions</h1>
+        <p class="sub">
+            Side-by-side outputs from the
+            <a href="https://github.com/ferreirafabio/open-instruct/blob/main/oellm/experiments/multilingual_eu/results/dolci_translated_results.md" target="_blank" rel="noopener">dolci_translated</a>
+            SFT experiment (A-75en, A-25en) on
+            <strong>French</strong>, <strong>German</strong>, <strong>Finnish</strong> LMArena prompts.
+            Compare across English/EU ratios and training checkpoints to eyeball the progression that the published Bradley-Terry Elo numbers compress.
+        </p>
+        <p class="meta" id="meta">Loading…</p>
+    </header>
+
+    <section class="controls">
+        <div class="control">
+            <label for="lang">Language</label>
+            <select id="lang"></select>
+        </div>
+        <div class="control">
+            <label for="prompt">Prompt</label>
+            <select id="prompt"></select>
+        </div>
+        <div class="control">
+            <label for="mode">View</label>
+            <select id="mode">
+                <option value="compare">Compare groups (single step each)</option>
+                <option value="progression">Progression (one group, all steps)</option>
+            </select>
+        </div>
+        <div class="control" id="group-control" hidden>
+            <label for="group">Group</label>
+            <select id="group"></select>
+        </div>
+        <div class="control" id="groups-control">
+            <label>Groups to compare</label>
+            <div id="groups-checkboxes" class="checkboxes"></div>
+        </div>
+    </section>
+
+    <section class="prompt-display">
+        <div class="prompt-header">Prompt</div>
+        <div id="prompt-text" class="prompt-text"></div>
+    </section>
+
+    <main id="results"></main>
+
+    <footer>
+        <p>
+            Source prompts: <code>lmarena-ai/arena-human-preference-100k</code>, sampled with seed 42.
+            Generation: vLLM, temperature 0, max 1024 new tokens.
+            Built from <code>oellm/experiments/dolci_translated/site/</code>.
+        </p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
