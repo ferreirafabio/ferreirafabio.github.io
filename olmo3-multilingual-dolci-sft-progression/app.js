@@ -1,5 +1,17 @@
-const LANG_LABEL = { fr: "French", de: "German", fi: "Finnish" };
-const LANG_FLAG = { fr: "🇫🇷", de: "🇩🇪", fi: "🇫🇮" };
+const LANG_LABEL = { fr: "French", de: "German", fi: "Finnish", sv: "Swedish", it: "Italian", es: "Spanish", cs: "Czech" };
+const LANG_FLAG = { fr: "🇫🇷", de: "🇩🇪", fi: "🇫🇮", sv: "🇸🇪", it: "🇮🇹", es: "🇪🇸", cs: "🇨🇿" };
+
+const CATEGORY_LABEL = {
+    math: "Math",
+    if: "Instr-following",
+    creativity: "Creativity",
+    complexity: "Complexity",
+    problem_solving: "Problem-solving",
+    technical_accuracy: "Technical",
+    specificity: "Specificity",
+    real_world: "Real-world",
+    domain_knowledge: "Domain knowledge",
+};
 
 // A-25en temporarily hidden — matched-compute re-run is in progress (job 28807734).
 // Original A-25en used 4.62M samples vs A-75en's 2.87M, so the comparison
@@ -28,6 +40,8 @@ let promptsByLang = {};
 const ui = {
     lang: document.getElementById("lang-segmented"),
     modelToggles: document.getElementById("model-toggles"),
+    categoryPills: document.getElementById("category-pills"),
+    categoryClear: document.getElementById("category-clear"),
     counter: document.getElementById("prompt-counter"),
     prev: document.getElementById("prev-prompt"),
     next: document.getElementById("next-prompt"),
@@ -52,6 +66,7 @@ const state = {
     promptIdx: 0,
     stepIdx: TICK_COUNT - 1,  // default to final
     visibleGroups: new Set(GROUP_ORDER),
+    activeCategories: new Set(),  // empty = no filter (show all)
 };
 
 async function load() {
@@ -74,6 +89,7 @@ async function load() {
 
     buildLangSegmented();
     buildModelToggles();
+    buildCategoryPills();
     bindControls();
     render();
 
@@ -129,6 +145,51 @@ function buildModelToggles() {
     }
 }
 
+function buildCategoryPills() {
+    if (!ui.categoryPills) return;
+    ui.categoryPills.innerHTML = "";
+    const allCats = (DATA && DATA.categories) || Object.keys(CATEGORY_LABEL);
+    for (const cat of allCats) {
+        const btn = document.createElement("button");
+        btn.type = "button";
+        btn.className = "pill pill-cat";
+        btn.dataset.cat = cat;
+        btn.textContent = CATEGORY_LABEL[cat] || cat;
+        btn.title = `Filter to prompts tagged ${cat}`;
+        btn.addEventListener("click", () => {
+            if (state.activeCategories.has(cat)) {
+                state.activeCategories.delete(cat);
+                btn.classList.remove("active");
+            } else {
+                state.activeCategories.add(cat);
+                btn.classList.add("active");
+            }
+            state.promptIdx = 0;
+            render();
+        });
+        ui.categoryPills.appendChild(btn);
+    }
+    if (ui.categoryClear) {
+        ui.categoryClear.addEventListener("click", () => {
+            state.activeCategories.clear();
+            for (const b of ui.categoryPills.querySelectorAll(".pill-cat.active")) b.classList.remove("active");
+            state.promptIdx = 0;
+            render();
+        });
+    }
+}
+
+function filteredPrompts() {
+    const arr = promptsByLang[state.lang] || [];
+    if (state.activeCategories.size === 0) return arr;
+    const wanted = state.activeCategories;
+    return arr.filter((p) => {
+        const pcats = p.categories || [];
+        for (const c of wanted) if (pcats.includes(c)) return true;
+        return false;
+    });
+}
+
 function bindControls() {
     ui.prev.addEventListener("click", () => moveByPrompt(-1));
     ui.next.addEventListener("click", () => moveByPrompt(+1));
@@ -137,7 +198,7 @@ function bindControls() {
         if (!isNaN(v)) jumpToPrompt(v - 1);
     });
     ui.randomBtn.addEventListener("click", () => {
-        const arr = promptsByLang[state.lang] || [];
+        const arr = filteredPrompts();
         if (arr.length) jumpToPrompt(Math.floor(Math.random() * arr.length));
     });
     ui.listBtn.addEventListener("click", openList);
@@ -159,21 +220,21 @@ function bindControls() {
 }
 
 function moveByPrompt(delta) {
-    const arr = promptsByLang[state.lang] || [];
+    const arr = filteredPrompts();
     if (!arr.length) return;
     state.promptIdx = Math.max(0, Math.min(arr.length - 1, state.promptIdx + delta));
     render();
 }
 
 function jumpToPrompt(idx) {
-    const arr = promptsByLang[state.lang] || [];
+    const arr = filteredPrompts();
     if (!arr.length) return;
     state.promptIdx = Math.max(0, Math.min(arr.length - 1, idx));
     render();
 }
 
 function currentPrompt() {
-    const arr = promptsByLang[state.lang] || [];
+    const arr = filteredPrompts();
     return arr[state.promptIdx];
 }
 
@@ -191,24 +252,33 @@ function modelForGroupAtStep(group, stepIdx) {
 }
 
 function render() {
-    const arr = promptsByLang[state.lang] || [];
+    const arr = filteredPrompts();
+    const total = (promptsByLang[state.lang] || []).length;
     const prompt = currentPrompt();
 
-    ui.counter.textContent = arr.length ? `#${state.promptIdx + 1} of ${arr.length}` : "—";
+    if (state.activeCategories.size > 0) {
+        ui.counter.textContent = arr.length ? `#${state.promptIdx + 1} of ${arr.length} (${state.activeCategories.size} cat filter, ${total} total)` : `0 of ${total} (filtered)`;
+    } else {
+        ui.counter.textContent = arr.length ? `#${state.promptIdx + 1} of ${arr.length}` : "—";
+    }
     ui.jump.max = arr.length;
     ui.jump.value = "";
     ui.prev.disabled = state.promptIdx <= 0;
     ui.next.disabled = state.promptIdx >= arr.length - 1;
 
     if (!prompt) {
-        ui.promptText.textContent = "(no prompts available)";
+        ui.promptText.textContent = arr.length === 0 && state.activeCategories.size > 0
+            ? "(no prompts in this language match the selected categories)"
+            : "(no prompts available)";
         ui.promptMeta.textContent = "";
         ui.results.innerHTML = "";
         return;
     }
 
     ui.promptText.textContent = prompt.prompt;
-    ui.promptMeta.textContent = `${LANG_LABEL[prompt.lang]} · ${prompt.prompt.length} chars · qid ${(prompt.source_question_id || "").slice(0, 8)}`;
+    const catLabels = (prompt.categories || []).map((c) => CATEGORY_LABEL[c] || c);
+    const catTxt = catLabels.length ? `  ·  ${catLabels.join(", ")}` : "";
+    ui.promptMeta.textContent = `${LANG_LABEL[prompt.lang]} · ${prompt.prompt.length} chars · qid ${(prompt.source_question_id || "").slice(0, 8)}${catTxt}`;
 
     renderStepCounter();
     renderResults();
@@ -295,7 +365,10 @@ function buildCard(group, prompt) {
 function openList() {
     ui.listModal.hidden = false;
     ui.listBackdrop.hidden = false;
-    ui.listTitle.textContent = `Prompts · ${LANG_LABEL[state.lang]} · ${(promptsByLang[state.lang] || []).length} total`;
+    const arr = filteredPrompts();
+    const total = (promptsByLang[state.lang] || []).length;
+    const catNote = state.activeCategories.size > 0 ? `  ·  ${arr.length}/${total} matching ${state.activeCategories.size} cat filter` : `  ·  ${total} total`;
+    ui.listTitle.textContent = `Prompts · ${LANG_LABEL[state.lang]}${catNote}`;
     renderPromptList();
 }
 
@@ -305,7 +378,7 @@ function closeList() {
 }
 
 function renderPromptList() {
-    const arr = promptsByLang[state.lang] || [];
+    const arr = filteredPrompts();
     ui.promptList.innerHTML = "";
     arr.forEach((p, i) => {
         const li = document.createElement("li");
@@ -317,15 +390,39 @@ function renderPromptList() {
         const txt = document.createElement("span");
         txt.className = "browse-item-text";
         txt.textContent = p.prompt;
-        li.appendChild(num);
-        li.appendChild(txt);
+        // small category chips under the prompt text
+        if (p.categories && p.categories.length) {
+            const chips = document.createElement("div");
+            chips.className = "browse-item-chips";
+            for (const c of p.categories) {
+                const chip = document.createElement("span");
+                chip.className = "browse-chip";
+                chip.textContent = CATEGORY_LABEL[c] || c;
+                chips.appendChild(chip);
+            }
+            const wrap = document.createElement("div");
+            wrap.className = "browse-item-text-wrap";
+            wrap.appendChild(txt);
+            wrap.appendChild(chips);
+            li.appendChild(num);
+            li.appendChild(wrap);
+        } else {
+            li.appendChild(num);
+            li.appendChild(txt);
+        }
         li.addEventListener("click", () => {
             jumpToPrompt(i);
             closeList();
         });
         ui.promptList.appendChild(li);
     });
-    // scroll the active item into view
+    if (!arr.length) {
+        const li = document.createElement("li");
+        li.className = "browse-item";
+        li.style.color = "var(--text-soft)";
+        li.textContent = state.activeCategories.size > 0 ? "No prompts match the selected categories." : "No prompts in this language.";
+        ui.promptList.appendChild(li);
+    }
     const active = ui.promptList.querySelector(".browse-item.active");
     if (active) setTimeout(() => active.scrollIntoView({ block: "center", behavior: "auto" }), 30);
 }

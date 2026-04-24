@@ -22,7 +22,9 @@
             <p class="hero-sub">
                 Side-by-side completions from the
                 <a href="https://github.com/ferreirafabio/open-instruct/blob/main/oellm/experiments/multilingual_eu/results/dolci_translated_results.md" target="_blank" rel="noopener">dolci_translated</a>
-                SFT experiment on <strong>274 LMArena prompts</strong> (100 French, 100 German, 74 Finnish — same source pool as the published Bradley-Terry Elo). Slide through training progress to see how the SFT runs evolve checkpoint by checkpoint; the pre-SFT base and SFT baseline are static references.
+                SFT experiment, sampled stratified-by-category from
+                <a href="https://huggingface.co/datasets/lmarena-ai/arena-human-preference-100k" target="_blank" rel="noopener">LMArena</a>
+                across <strong>7 EU languages</strong> (cs, de, es, fi, fr, it, sv). Slide through training progress to see how the SFT runs evolve checkpoint by checkpoint; the pre-SFT base and SFT baseline are static references. Filter by LMArena category (math, creativity, instruction-following, …) to focus on a behaviour.
             </p>
             <p class="hero-meta" id="meta">Loading…</p>
         </div>
@@ -65,6 +67,11 @@
         <div class="models-bar">
             <span class="control-label">Show / hide</span>
             <div id="model-toggles" class="pills"></div>
+        </div>
+        <div class="models-bar models-bar-secondary">
+            <span class="control-label">Filter prompts by LMArena category</span>
+            <div id="category-pills" class="pills"></div>
+            <button id="category-clear" class="ghost-btn" title="Clear all category filters">Clear</button>
         </div>
     </section>
 

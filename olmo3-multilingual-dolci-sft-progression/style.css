@@ -387,6 +387,31 @@ code {
     box-shadow: var(--shadow-sm);
 }
 
+.models-bar-secondary { margin-top: 0.6rem; }
+
+.pill.pill-cat {
+    padding: 0.3rem 0.75rem;
+    font-size: 0.78rem;
+}
+
+.pill.pill-cat.active {
+    background: var(--accent);
+    color: white;
+    border-color: var(--accent);
+}
+
+.browse-item-text-wrap { flex: 1; display: flex; flex-direction: column; gap: 0.35rem; min-width: 0; }
+.browse-item-chips { display: flex; flex-wrap: wrap; gap: 0.25rem; }
+.browse-chip {
+    display: inline-block;
+    font-size: 0.65rem;
+    padding: 0.1rem 0.45rem;
+    border-radius: 4px;
+    background: var(--surface-muted);
+    color: var(--text-muted);
+    font-family: "JetBrains Mono", ui-monospace, monospace;
+}
+
 .pills {
     display: flex;
     flex-wrap: wrap;
