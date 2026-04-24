@@ -52,10 +52,12 @@
         </div>
     </section>
 
-    <section class="models-bar">
-        <span class="control-label">Models</span>
-        <div id="model-pills" class="pills"></div>
-        <span class="hint" id="models-hint"></span>
+    <section class="models-bar-section">
+        <div class="models-bar">
+            <span class="control-label">Models</span>
+            <div id="model-pills" class="pills"></div>
+            <span class="hint" id="models-hint"></span>
+        </div>
     </section>
 
     <section class="prompt-display">
@@ -68,10 +70,11 @@
 
     <main id="results"></main>
 
+    <div id="browse-backdrop" class="backdrop" hidden></div>
     <aside id="browse-drawer" class="drawer" hidden>
         <div class="drawer-header">
-            <input id="browse-search" type="search" placeholder="Search prompts in current language…" autocomplete="off" />
-            <button id="browse-close" class="icon-btn" aria-label="Close">×</button>
+            <input id="browse-search" type="search" placeholder="Search prompts…" autocomplete="off" />
+            <button id="browse-close" class="close-btn" aria-label="Close">Close ✕</button>
         </div>
         <ul id="browse-list" class="browse-list"></ul>
     </aside>

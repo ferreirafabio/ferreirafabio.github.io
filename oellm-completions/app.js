@@ -32,6 +32,7 @@ const ui = {
     browseBtn: document.getElementById("browse-toggle"),
     browseClose: document.getElementById("browse-close"),
     browseDrawer: document.getElementById("browse-drawer"),
+    browseBackdrop: document.getElementById("browse-backdrop"),
     browseSearch: document.getElementById("browse-search"),
     browseList: document.getElementById("browse-list"),
     promptText: document.getElementById("prompt-text"),
@@ -80,7 +81,7 @@ async function load() {
     updateModeUI();
     render();
 
-    ui.meta.textContent = `${DATA.models.length} models  ·  ${DATA.prompts.length} prompts  ·  ${Object.keys(DATA.completions).length.toLocaleString()} completions`;
+    ui.meta.textContent = `${DATA.models.length} checkpoints  ·  ${DATA.prompts.length} prompts  ·  ${Object.keys(DATA.completions).length.toLocaleString()} completions`;
 }
 
 function buildLangSegmented() {
@@ -162,6 +163,7 @@ function bindControls() {
     });
     ui.browseBtn.addEventListener("click", openBrowse);
     ui.browseClose.addEventListener("click", closeBrowse);
+    ui.browseBackdrop.addEventListener("click", closeBrowse);
     ui.browseSearch.addEventListener("input", renderBrowseList);
 
     document.addEventListener("keydown", (e) => {
@@ -400,6 +402,7 @@ function renderCompletion(node, text) {
 
 function openBrowse() {
     ui.browseDrawer.hidden = false;
+    ui.browseBackdrop.hidden = false;
     ui.browseSearch.value = "";
     renderBrowseList();
     setTimeout(() => ui.browseSearch.focus(), 30);
@@ -407,6 +410,7 @@ function openBrowse() {
 
 function closeBrowse() {
     ui.browseDrawer.hidden = true;
+    ui.browseBackdrop.hidden = true;
 }
 
 function renderBrowseList() {

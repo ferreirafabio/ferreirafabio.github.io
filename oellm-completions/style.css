@@ -274,9 +274,13 @@ code {
 
 /* ---------- Models bar ---------- */
 
-.models-bar {
+.models-bar-section {
     max-width: 1280px;
     margin: 1rem auto 0;
+    padding: 0 2rem;
+}
+
+.models-bar {
     padding: 0.85rem 1.2rem;
     display: flex;
     align-items: center;
@@ -286,8 +290,6 @@ code {
     border: 1px solid var(--border);
     border-radius: var(--radius-md);
     box-shadow: var(--shadow-sm);
-    margin-left: 2rem;
-    margin-right: 2rem;
 }
 
 .pills {
@@ -557,19 +559,50 @@ main {
 
 /* ---------- Browse drawer ---------- */
 
+.backdrop {
+    position: fixed;
+    inset: 0;
+    background: rgba(15, 23, 42, 0.45);
+    z-index: 40;
+    animation: fade-in 0.18s ease;
+}
+
+@keyframes fade-in { from { opacity: 0; } to { opacity: 1; } }
+
 .drawer {
     position: fixed;
     top: 0;
     right: 0;
     bottom: 0;
-    width: min(440px, 90vw);
+    width: min(480px, 92vw);
     background: var(--surface);
     border-left: 1px solid var(--border);
     box-shadow: var(--shadow-lg);
     display: flex;
     flex-direction: column;
     z-index: 50;
-    animation: slide-in 0.18s ease;
+    animation: slide-in 0.2s ease;
+}
+
+.close-btn {
+    height: 36px;
+    padding: 0 0.85rem;
+    border: 1px solid var(--border);
+    background: var(--surface-muted);
+    border-radius: 8px;
+    font: inherit;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--text);
+    cursor: pointer;
+    flex-shrink: 0;
+    transition: all 0.12s ease;
+}
+
+.close-btn:hover {
+    background: var(--text);
+    color: var(--surface);
+    border-color: var(--text);
 }
 
 @keyframes slide-in {
