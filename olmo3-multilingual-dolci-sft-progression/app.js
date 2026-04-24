@@ -1,7 +1,11 @@
 const LANG_LABEL = { fr: "French", de: "German", fi: "Finnish" };
 const LANG_FLAG = { fr: "🇫🇷", de: "🇩🇪", fi: "🇫🇮" };
 
-const GROUP_ORDER = ["base", "sft-baseline", "A-75en", "A-25en"];
+// A-25en temporarily hidden — matched-compute re-run is in progress (job 28807734).
+// Original A-25en used 4.62M samples vs A-75en's 2.87M, so the comparison
+// conflated ratio with compute. Card returns once dt-A-25en-matched is trained
+// and its completions are generated.
+const GROUP_ORDER = ["base", "sft-baseline", "A-75en"];
 const GROUP_LABEL = {
     base: "Pre-SFT (base)",
     "sft-baseline": "OLMo-3-7B-Instruct-SFT (v2 reproduction)",
@@ -213,11 +217,15 @@ function render() {
 }
 
 function renderStepCounter() {
-    const a75 = modelForGroupAtStep("A-75en", state.stepIdx);
-    const a25 = modelForGroupAtStep("A-25en", state.stepIdx);
-    const a75step = a75 && a75.step !== null ? `step ${a75.step}` : "—";
-    const a25step = a25 && a25.step !== null ? `step ${a25.step}` : "—";
-    ui.stepCounter.textContent = `A-75en ${a75step}  ·  A-25en ${a25step}`;
+    const parts = [];
+    for (const g of GROUP_ORDER) {
+        const models = modelsByGroup[g] || [];
+        if (models.length <= 1) continue;  // skip static groups
+        const m = modelForGroupAtStep(g, state.stepIdx);
+        const step = m && m.step !== null ? `step ${m.step}` : "—";
+        parts.push(`${g} ${step}`);
+    }
+    ui.stepCounter.textContent = parts.join("  ·  ");
 }
 
 function renderResults() {
