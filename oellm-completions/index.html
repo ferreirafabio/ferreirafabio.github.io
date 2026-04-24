@@ -4,59 +4,83 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>oellm-completions — Dolci-Translated qualitative outputs</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Dolci-Translated qualitative completions</h1>
-        <p class="sub">
-            Side-by-side outputs from the
-            <a href="https://github.com/ferreirafabio/open-instruct/blob/main/oellm/experiments/multilingual_eu/results/dolci_translated_results.md" target="_blank" rel="noopener">dolci_translated</a>
-            SFT experiment (A-75en, A-25en) on
-            <strong>French</strong>, <strong>German</strong>, <strong>Finnish</strong> LMArena prompts.
-            Compare across English/EU ratios and training checkpoints to eyeball the progression that the published Bradley-Terry Elo numbers compress.
-        </p>
-        <p class="meta" id="meta">Loading…</p>
+    <header class="hero">
+        <div class="hero-inner">
+            <div class="eyebrow">qualitative completions</div>
+            <h1>Dolci-Translated <span class="hero-accent">qualitative viewer</span></h1>
+            <p class="hero-sub">
+                Side-by-side completions from the
+                <a href="https://github.com/ferreirafabio/open-instruct/blob/main/oellm/experiments/multilingual_eu/results/dolci_translated_results.md" target="_blank" rel="noopener">dolci_translated</a>
+                SFT experiment on French, German and Finnish prompts. Compare models head-to-head with a per-model checkpoint slider, or watch a single training run progress through its checkpoints.
+            </p>
+            <p class="hero-meta" id="meta">Loading…</p>
+        </div>
     </header>
 
     <section class="controls">
-        <div class="control">
-            <label for="lang">Language</label>
-            <select id="lang"></select>
+        <div class="control control-grow">
+            <span class="control-label">Language</span>
+            <div id="lang-segmented" class="segmented"></div>
         </div>
-        <div class="control">
-            <label for="prompt">Prompt</label>
-            <select id="prompt"></select>
+
+        <div class="control control-grow">
+            <span class="control-label">View</span>
+            <div id="mode-segmented" class="segmented">
+                <button data-value="compare" class="seg-btn active">Compare models · slider per ckpt</button>
+                <button data-value="progression" class="seg-btn">One model · ckpt progression</button>
+            </div>
         </div>
-        <div class="control">
-            <label for="mode">View</label>
-            <select id="mode">
-                <option value="compare">Compare groups (single step each)</option>
-                <option value="progression">Progression (one group, all steps)</option>
-            </select>
-        </div>
-        <div class="control" id="group-control" hidden>
-            <label for="group">Group</label>
-            <select id="group"></select>
-        </div>
-        <div class="control" id="groups-control">
-            <label>Groups to compare</label>
-            <div id="groups-checkboxes" class="checkboxes"></div>
+
+        <div class="control control-prompt">
+            <div class="control-row">
+                <span class="control-label">Prompt</span>
+                <span class="prompt-counter" id="prompt-counter"></span>
+            </div>
+            <div class="prompt-nav">
+                <button id="prev-prompt" class="icon-btn" aria-label="Previous prompt" title="Previous (←)">‹</button>
+                <input id="prompt-jump" type="number" min="1" placeholder="#" class="prompt-jump" />
+                <button id="next-prompt" class="icon-btn" aria-label="Next prompt" title="Next (→)">›</button>
+                <button id="random-prompt" class="ghost-btn" title="Pick a random prompt">Random</button>
+                <button id="browse-toggle" class="ghost-btn" title="Browse all prompts in this language">Browse</button>
+            </div>
         </div>
     </section>
 
+    <section class="models-bar">
+        <span class="control-label">Models</span>
+        <div id="model-pills" class="pills"></div>
+        <span class="hint" id="models-hint"></span>
+    </section>
+
     <section class="prompt-display">
-        <div class="prompt-header">Prompt</div>
+        <div class="prompt-display-head">
+            <span class="prompt-display-tag">Prompt</span>
+            <span class="prompt-display-meta" id="prompt-display-meta"></span>
+        </div>
         <div id="prompt-text" class="prompt-text"></div>
     </section>
 
     <main id="results"></main>
 
+    <aside id="browse-drawer" class="drawer" hidden>
+        <div class="drawer-header">
+            <input id="browse-search" type="search" placeholder="Search prompts in current language…" autocomplete="off" />
+            <button id="browse-close" class="icon-btn" aria-label="Close">×</button>
+        </div>
+        <ul id="browse-list" class="browse-list"></ul>
+    </aside>
+
     <footer>
         <p>
-            Source prompts: <code>lmarena-ai/arena-human-preference-100k</code>, sampled with seed 42.
+            Source prompts sampled from <code>lmarena-ai/arena-human-preference-100k</code> (seed 42).
             Generation: vLLM, temperature 0, max 1024 new tokens.
-            Built from <code>oellm/experiments/dolci_translated/site/</code>.
+            <a href="https://github.com/ferreirafabio/open-instruct/tree/main/oellm/experiments/dolci_translated" target="_blank" rel="noopener">Source on GitHub ↗</a>
         </p>
     </footer>
 
