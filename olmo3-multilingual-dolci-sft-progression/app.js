@@ -308,6 +308,20 @@ function renderResults() {
         ui.results.innerHTML = `<div class="empty-state">All models hidden — toggle one back on above.</div>`;
         return;
     }
+
+    // section header above the cards row
+    const header = document.createElement("div");
+    header.className = "completions-display-head";
+    const tag = document.createElement("span");
+    tag.className = "completions-display-tag";
+    tag.textContent = "Completions";
+    const meta = document.createElement("span");
+    meta.className = "completions-display-meta";
+    meta.textContent = `${visible.length} model${visible.length === 1 ? "" : "s"}  ·  training-progress slider ${state.stepIdx + 1}/${TICK_COUNT}`;
+    header.appendChild(tag);
+    header.appendChild(meta);
+    ui.results.appendChild(header);
+
     const grid = document.createElement("div");
     grid.className = `cards-row cards-row-${visible.length}`;
     for (const group of visible) grid.appendChild(buildCard(group, prompt));

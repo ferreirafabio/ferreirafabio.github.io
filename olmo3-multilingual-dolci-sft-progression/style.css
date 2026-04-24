@@ -529,6 +529,30 @@ main {
     padding: 0 2rem;
 }
 
+.completions-display-head {
+    display: flex;
+    align-items: baseline;
+    gap: 0.7rem;
+    margin: 0.6rem 0 0.5rem;
+}
+
+.completions-display-tag {
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--accent);
+    background: var(--accent-soft);
+    padding: 0.22rem 0.55rem;
+    border-radius: 6px;
+}
+
+.completions-display-meta {
+    font-size: 0.75rem;
+    color: var(--text-soft);
+    font-family: "JetBrains Mono", ui-monospace, monospace;
+}
+
 .cards-row {
     display: grid;
     gap: 0.85rem;
