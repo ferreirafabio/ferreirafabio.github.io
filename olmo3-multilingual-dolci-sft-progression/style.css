@@ -1,4 +1,5 @@
 :root {
+    /* Light theme (default) */
     --bg: #f5f6fb;
     --surface: #ffffff;
     --surface-elevated: #ffffff;
@@ -21,6 +22,36 @@
     --sft-baseline-color: #ec4899;
     --A-75en-color: #10b981;
     --A-25en-color: #f59e0b;
+    --hero-grad-1: rgba(99, 102, 241, 0.18);
+    --hero-grad-2: rgba(236, 72, 153, 0.12);
+    --hero-grad-bg-from: #ffffff;
+    --hero-grad-bg-to: #f8f9ff;
+}
+
+[data-theme="dark"] {
+    --bg: #0d1017;
+    --surface: #161a25;
+    --surface-elevated: #1c2030;
+    --surface-muted: #20253a;
+    --border: #2a2f43;
+    --border-strong: #3a4060;
+    --text: #e7eaf3;
+    --text-muted: #a1a8be;
+    --text-soft: #6f7894;
+    --accent: #818cf8;
+    --accent-hover: #a5b4fc;
+    --accent-soft: rgba(129, 140, 248, 0.14);
+    --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.20), 0 1px 3px rgba(0, 0, 0, 0.30);
+    --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.28), 0 2px 4px rgba(0, 0, 0, 0.20);
+    --shadow-lg: 0 16px 40px rgba(0, 0, 0, 0.45), 0 4px 12px rgba(0, 0, 0, 0.30);
+    --base-color: #a78bfa;
+    --sft-baseline-color: #f472b6;
+    --A-75en-color: #34d399;
+    --A-25en-color: #fbbf24;
+    --hero-grad-1: rgba(129, 140, 248, 0.22);
+    --hero-grad-2: rgba(244, 114, 182, 0.16);
+    --hero-grad-bg-from: #161a25;
+    --hero-grad-bg-to: #0d1017;
 }
 
 * { box-sizing: border-box; }
@@ -54,12 +85,51 @@ code {
 
 .hero {
     background:
-        radial-gradient(ellipse at 20% 0%, rgba(99, 102, 241, 0.18) 0%, transparent 55%),
-        radial-gradient(ellipse at 90% 30%, rgba(236, 72, 153, 0.12) 0%, transparent 55%),
-        linear-gradient(180deg, #ffffff 0%, #f8f9ff 100%);
+        radial-gradient(ellipse at 20% 0%, var(--hero-grad-1) 0%, transparent 55%),
+        radial-gradient(ellipse at 90% 30%, var(--hero-grad-2) 0%, transparent 55%),
+        linear-gradient(180deg, var(--hero-grad-bg-from) 0%, var(--hero-grad-bg-to) 100%);
     border-bottom: 1px solid var(--border);
     padding: 2.5rem 2rem 2rem;
+    position: relative;
 }
+
+/* Theme toggle button (fixed top-right) */
+.theme-toggle {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    z-index: 30;  /* below backdrop (40) + drawer (50) so the modal can capture clicks */
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid var(--border);
+    background: var(--surface);
+    color: var(--text);
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1rem;
+    line-height: 1;
+    box-shadow: var(--shadow-md);
+    transition: all 0.18s ease;
+}
+
+.theme-toggle:hover {
+    border-color: var(--accent);
+    color: var(--accent);
+    transform: rotate(15deg);
+}
+
+.theme-toggle .theme-icon-light,
+.theme-toggle .theme-icon-dark {
+    pointer-events: none;
+    transition: opacity 0.18s ease;
+}
+
+.theme-toggle .theme-icon-dark { display: none; }
+[data-theme="dark"] .theme-toggle .theme-icon-light { display: none; }
+[data-theme="dark"] .theme-toggle .theme-icon-dark { display: inline; }
 
 .hero-inner { max-width: 1440px; margin: 0 auto; }
 
@@ -547,11 +617,13 @@ main {
 .backdrop {
     position: fixed;
     inset: 0;
-    background: rgba(15, 23, 42, 0.45);
+    background: rgba(15, 23, 42, 0.55);
     z-index: 40;
     animation: fade-in 0.18s ease;
     cursor: pointer;
 }
+
+[data-theme="dark"] .backdrop { background: rgba(0, 0, 0, 0.65); }
 
 @keyframes fade-in { from { opacity: 0; } to { opacity: 1; } }
 

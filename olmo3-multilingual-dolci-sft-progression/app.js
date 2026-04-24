@@ -8,7 +8,7 @@ const LANG_FLAG = { fr: "🇫🇷", de: "🇩🇪", fi: "🇫🇮" };
 const GROUP_ORDER = ["base", "sft-baseline", "A-75en"];
 const GROUP_LABEL = {
     base: "Pre-SFT (base)",
-    "sft-baseline": "OLMo-3-7B-Instruct-SFT (v2 reproduction)",
+    "sft-baseline": "OLMo-3-7B-Instruct-SFT",
     "A-75en": "A-75en",
     "A-25en": "A-25en",
 };
@@ -329,6 +329,44 @@ function renderPromptList() {
     const active = ui.promptList.querySelector(".browse-item.active");
     if (active) setTimeout(() => active.scrollIntoView({ block: "center", behavior: "auto" }), 30);
 }
+
+/* ---------- theme (light / dark) ---------- */
+
+function initTheme() {
+    const stored = localStorage.getItem("oellm-theme");
+    let theme;
+    if (stored === "dark" || stored === "light") {
+        theme = stored;
+    } else {
+        theme = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+    }
+    setTheme(theme, false);
+
+    const toggle = document.getElementById("theme-toggle");
+    if (toggle) {
+        toggle.addEventListener("click", () => {
+            const next = document.documentElement.getAttribute("data-theme") === "dark" ? "light" : "dark";
+            setTheme(next, true);
+        });
+    }
+
+    document.addEventListener("keydown", (e) => {
+        if (e.target.matches("input, select, textarea")) return;
+        if (e.key === "t" || e.key === "T") {
+            const next = document.documentElement.getAttribute("data-theme") === "dark" ? "light" : "dark";
+            setTheme(next, true);
+        }
+    });
+}
+
+function setTheme(theme, persist) {
+    document.documentElement.setAttribute("data-theme", theme);
+    const toggle = document.getElementById("theme-toggle");
+    if (toggle) toggle.setAttribute("aria-pressed", theme === "dark" ? "true" : "false");
+    if (persist) localStorage.setItem("oellm-theme", theme);
+}
+
+initTheme();
 
 load().catch((err) => {
     ui.meta.textContent = `Error loading completions.json: ${err}`;

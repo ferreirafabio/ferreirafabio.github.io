@@ -3,21 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>oellm-completions — Dolci-Translated qualitative outputs</title>
+    <title>Multilingual-Dolci-SFTed Olmo3 Checkpoint Viewer</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode" title="Toggle dark mode (T)">
+        <span class="theme-icon-light" aria-hidden="true">☀</span>
+        <span class="theme-icon-dark" aria-hidden="true">☾</span>
+    </button>
+
     <header class="hero">
         <div class="hero-inner">
             <div class="eyebrow">qualitative completions</div>
-            <h1>Dolci-Translated <span class="hero-accent">qualitative viewer</span></h1>
+            <h1>Multilingual-Dolci-SFTed <span class="hero-accent">Olmo3 Checkpoint Viewer</span></h1>
             <p class="hero-sub">
-                Side-by-side completions across all four models from the
+                Side-by-side completions from the
                 <a href="https://github.com/ferreirafabio/open-instruct/blob/main/oellm/experiments/multilingual_eu/results/dolci_translated_results.md" target="_blank" rel="noopener">dolci_translated</a>
-                SFT experiment on French, German, and Finnish prompts. Slide through training progress to see how A-75en and A-25en evolve at each checkpoint; the pre-SFT base and SFT baseline are static references.
+                SFT experiment on <strong>274 LMArena prompts</strong> (100 French, 100 German, 74 Finnish — same source pool as the published Bradley-Terry Elo). Slide through training progress to see how the SFT runs evolve checkpoint by checkpoint; the pre-SFT base and SFT baseline are static references.
             </p>
             <p class="hero-meta" id="meta">Loading…</p>
         </div>
