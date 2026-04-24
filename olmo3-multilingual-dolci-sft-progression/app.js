@@ -3,7 +3,7 @@ const LANG_FLAG = { fr: "🇫🇷", de: "🇩🇪", fi: "🇫🇮" };
 
 const GROUP_ORDER = ["base", "sft-baseline", "A-75en", "A-25en"];
 const GROUP_LABEL = {
-    base: "Pre-SFT base",
+    base: "Pre-SFT (base)",
     "sft-baseline": "SFT baseline",
     "A-75en": "A-75en",
     "A-25en": "A-25en",
