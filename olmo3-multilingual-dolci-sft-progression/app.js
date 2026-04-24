@@ -280,33 +280,14 @@ function render() {
     ui.promptText.textContent = prompt.prompt;
     ui.promptMeta.textContent = `${LANG_LABEL[prompt.lang]} · ${prompt.prompt.length} chars · qid ${(prompt.source_question_id || "").slice(0, 8)}`;
 
-    // Render the prompt's category tags as labelled chips so it's clear they
-    // are properties of THIS prompt, not the active filter
+    // Render the prompt's categories as a simple inline comma-separated list
     if (ui.promptTags) {
-        ui.promptTags.innerHTML = "";
         const cats = prompt.categories || [];
         if (cats.length) {
-            const label = document.createElement("span");
-            label.className = "prompt-tags-label";
-            label.textContent = "Tagged:";
-            ui.promptTags.appendChild(label);
-            for (const c of cats) {
-                const chip = document.createElement("span");
-                chip.className = "prompt-tag-chip";
-                if (state.activeCategories.has(c)) chip.classList.add("active");
-                chip.textContent = CATEGORY_LABEL[c] || c;
-                chip.title = `Filter to ${CATEGORY_LABEL[c] || c} prompts`;
-                chip.addEventListener("click", () => {
-                    if (state.activeCategories.has(c)) state.activeCategories.delete(c);
-                    else state.activeCategories.add(c);
-                    // sync the filter pills above
-                    const pill = ui.categoryPills && ui.categoryPills.querySelector(`.pill-cat[data-cat="${c}"]`);
-                    if (pill) pill.classList.toggle("active", state.activeCategories.has(c));
-                    state.promptIdx = 0;
-                    render();
-                });
-                ui.promptTags.appendChild(chip);
-            }
+            const labels = cats.map((c) => CATEGORY_LABEL[c] || c).join(", ");
+            ui.promptTags.innerHTML = `<span class="prompt-tags-label">Prompt category:</span> <span class="prompt-tags-list">${labels}</span>`;
+        } else {
+            ui.promptTags.innerHTML = "";
         }
     }
 
