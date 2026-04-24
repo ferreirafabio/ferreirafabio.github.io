@@ -4,15 +4,15 @@ const LANG_FLAG = { fr: "🇫🇷", de: "🇩🇪", fi: "🇫🇮" };
 const GROUP_ORDER = ["base", "sft-baseline", "A-75en", "A-25en"];
 const GROUP_LABEL = {
     base: "Pre-SFT (base)",
-    "sft-baseline": "SFT baseline",
+    "sft-baseline": "OLMo-3-7B-Instruct-SFT (v2 reproduction)",
     "A-75en": "A-75en",
     "A-25en": "A-25en",
 };
 const GROUP_TITLE = {
-    base: "OLMo-3-1025-7B (no SFT)",
-    "sft-baseline": "OLMo-3-7B-Instruct-SFT-v2 (Dolci-Instruct-SFT, English-only)",
-    "A-75en": "Dolci-Translated A-75en (75% en, 25% translated)",
-    "A-25en": "Dolci-Translated A-25en (25% en, 75% translated)",
+    base: "OLMo-3-1025-7B (no SFT) — allenai/Olmo-3-1025-7B",
+    "sft-baseline": "Our reproduction of allenai/Olmo-3-7B-Instruct-SFT, v2 (trained on Dolci-Instruct-SFT, English-only) at step 3252",
+    "A-75en": "Dolci-Translated A-75en (75% en, 25% translated, continued SFT from v2)",
+    "A-25en": "Dolci-Translated A-25en (25% en, 75% translated, continued SFT from v2)",
 };
 
 const TICK_COUNT = 5;
@@ -23,6 +23,7 @@ let promptsByLang = {};
 
 const ui = {
     lang: document.getElementById("lang-segmented"),
+    modelToggles: document.getElementById("model-toggles"),
     counter: document.getElementById("prompt-counter"),
     prev: document.getElementById("prev-prompt"),
     next: document.getElementById("next-prompt"),
@@ -46,6 +47,7 @@ const state = {
     lang: null,
     promptIdx: 0,
     stepIdx: TICK_COUNT - 1,  // default to final
+    visibleGroups: new Set(GROUP_ORDER),
 };
 
 async function load() {
@@ -67,6 +69,7 @@ async function load() {
     state.lang = Object.keys(promptsByLang)[0];
 
     buildLangSegmented();
+    buildModelToggles();
     bindControls();
     render();
 
@@ -88,6 +91,37 @@ function buildLangSegmented() {
             render();
         });
         ui.lang.appendChild(btn);
+    }
+}
+
+function buildModelToggles() {
+    ui.modelToggles.innerHTML = "";
+    for (const g of GROUP_ORDER) {
+        if (!modelsByGroup[g]) continue;
+        const btn = document.createElement("button");
+        btn.type = "button";
+        btn.className = "pill";
+        btn.dataset.group = g;
+        if (state.visibleGroups.has(g)) btn.classList.add("active");
+        btn.title = GROUP_TITLE[g];
+        btn.innerHTML = `
+            <span class="pill-check" aria-hidden="true">${state.visibleGroups.has(g) ? "✓" : ""}</span>
+            <span class="pill-dot group-dot-${g}"></span>
+            ${GROUP_LABEL[g]}
+        `;
+        btn.addEventListener("click", () => {
+            if (state.visibleGroups.has(g)) {
+                state.visibleGroups.delete(g);
+                btn.classList.remove("active");
+            } else {
+                state.visibleGroups.add(g);
+                btn.classList.add("active");
+            }
+            const check = btn.querySelector(".pill-check");
+            if (check) check.textContent = state.visibleGroups.has(g) ? "✓" : "";
+            renderResults();
+        });
+        ui.modelToggles.appendChild(btn);
     }
 }
 
@@ -183,7 +217,7 @@ function renderStepCounter() {
     const a25 = modelForGroupAtStep("A-25en", state.stepIdx);
     const a75step = a75 && a75.step !== null ? `step ${a75.step}` : "—";
     const a25step = a25 && a25.step !== null ? `step ${a25.step}` : "—";
-    ui.stepCounter.textContent = `tick ${state.stepIdx + 1}/${TICK_COUNT}  ·  A-75en ${a75step}  ·  A-25en ${a25step}`;
+    ui.stepCounter.textContent = `A-75en ${a75step}  ·  A-25en ${a25step}`;
 }
 
 function renderResults() {
@@ -191,13 +225,14 @@ function renderResults() {
     if (!prompt) { ui.results.innerHTML = ""; return; }
 
     ui.results.innerHTML = "";
-    const grid = document.createElement("div");
-    grid.className = "cards-row";
-
-    for (const group of GROUP_ORDER) {
-        if (!modelsByGroup[group]) continue;
-        grid.appendChild(buildCard(group, prompt));
+    const visible = GROUP_ORDER.filter((g) => modelsByGroup[g] && state.visibleGroups.has(g));
+    if (!visible.length) {
+        ui.results.innerHTML = `<div class="empty-state">All models hidden — toggle one back on above.</div>`;
+        return;
     }
+    const grid = document.createElement("div");
+    grid.className = `cards-row cards-row-${visible.length}`;
+    for (const group of visible) grid.appendChild(buildCard(group, prompt));
     ui.results.appendChild(grid);
 }
 
