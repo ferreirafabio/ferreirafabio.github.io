@@ -13,11 +13,11 @@ const CATEGORY_LABEL = {
     domain_knowledge: "Domain knowledge",
 };
 
-// A-25en temporarily hidden — matched-compute re-run is in progress (job 28807734).
-// Original A-25en used 4.62M samples vs A-75en's 2.87M, so the comparison
-// conflated ratio with compute. Card returns once dt-A-25en-matched is trained
-// and its completions are generated.
-const GROUP_ORDER = ["base", "sft-baseline", "A-75en"];
+// A-25en uses the matched-compute re-run (2.87M total samples, 3998 steps,
+// same as A-75en) so slider positions compare apples-to-apples. Later ckpts
+// land progressively as training produces them; missing ones render as
+// "(not generated yet)" placeholders.
+const GROUP_ORDER = ["base", "sft-baseline", "A-75en", "A-25en"];
 const GROUP_LABEL = {
     base: "Pre-SFT (base)",
     "sft-baseline": "OLMo-3-7B-Instruct-SFT",
@@ -28,7 +28,7 @@ const GROUP_TITLE = {
     base: "OLMo-3-1025-7B (no SFT) — allenai/Olmo-3-1025-7B",
     "sft-baseline": "Our reproduction of allenai/Olmo-3-7B-Instruct-SFT, v2 (trained on Dolci-Instruct-SFT, English-only) at step 3252",
     "A-75en": "Dolci-Translated A-75en (75% en, 25% translated, continued SFT from v2)",
-    "A-25en": "Dolci-Translated A-25en (25% en, 75% translated, continued SFT from v2)",
+    "A-25en": "Dolci-Translated A-25en (25% en, 75% translated) — matched compute: 2.87M samples, 3998 steps, directly comparable to A-75en",
 };
 
 const TICK_COUNT = 5;
