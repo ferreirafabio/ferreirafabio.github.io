@@ -521,6 +521,43 @@ code {
     min-height: 2.5rem;
 }
 
+.prompt-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.35rem;
+    margin-top: 0.55rem;
+    align-items: center;
+}
+
+.prompt-tags-label {
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--text-soft);
+    margin-right: 0.2rem;
+}
+
+.prompt-tag-chip {
+    display: inline-block;
+    font-size: 0.72rem;
+    padding: 0.18rem 0.55rem;
+    border-radius: 999px;
+    background: var(--surface-muted);
+    color: var(--text-muted);
+    border: 1px solid var(--border);
+    cursor: pointer;
+    transition: all 0.12s ease;
+}
+
+.prompt-tag-chip:hover { color: var(--text); border-color: var(--border-strong); }
+
+.prompt-tag-chip.active {
+    background: var(--accent);
+    color: white;
+    border-color: var(--accent);
+}
+
 /* ---------- Main grid: 4 cards in one row ---------- */
 
 main {
