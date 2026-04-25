@@ -180,6 +180,18 @@ code {
     font-family: "JetBrains Mono", ui-monospace, monospace;
 }
 
+.hero-note {
+    margin: 0.7rem 0 0.4rem;
+    padding: 0.55rem 0.85rem;
+    background: var(--surface-muted);
+    border-left: 3px solid var(--accent);
+    border-radius: 6px;
+    color: var(--text-muted);
+    font-size: 0.82rem;
+    line-height: 1.5;
+    max-width: 80ch;
+}
+
 /* ---------- Controls bar ---------- */
 
 .controls {

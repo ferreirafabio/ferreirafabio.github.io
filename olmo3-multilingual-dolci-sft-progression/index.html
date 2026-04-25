@@ -26,6 +26,9 @@
                 <a href="https://huggingface.co/datasets/lmarena-ai/arena-human-preference-100k" target="_blank" rel="noopener">LMArena</a>
                 across <strong>7 EU languages</strong> (cs, de, es, fi, fr, it, sv). Slide through training progress to see how the SFT runs evolve checkpoint by checkpoint; the pre-SFT base and SFT baseline are static references. Filter by LMArena category (math, creativity, instruction-following, …) to focus on a behaviour.
             </p>
+            <p class="hero-note">
+                Note: A-75en converged in 3998 steps and A-25en in 5398 steps even though both runs processed the same 2.87M samples × 2 epochs at the same batch size. Translated text packs into more tokens per sample → more steps to cover the same data. <strong>Tick 4 (final)</strong> is the only slider position where both runs are at 100% trained; intermediate ticks compare the literal step numbers and so are at slightly different training fractions.
+            </p>
             <p class="hero-meta" id="meta">Loading…</p>
         </div>
     </header>
