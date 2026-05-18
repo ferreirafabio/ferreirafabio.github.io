@@ -100,6 +100,14 @@
     color: #555; font-size: 0.9em;
   }
 
+  .featured-section { margin: 1.2em 0 1.8em; animation: fadeInUp 0.8s ease-out 0.05s both; }
+  .featured-section-title {
+    margin: 0 0 0.55em; font-size: 0.72em; font-weight: 700;
+    color: #888; letter-spacing: 0.14em; text-transform: uppercase;
+  }
+  .featured-section .featured-banner { animation: none; margin: 0 0 0.7em; }
+  .featured-section .featured-banner:last-child { margin-bottom: 0; }
+
   .featured-banner {
     background: white;
     color: #333;
@@ -201,10 +209,17 @@
   </div>
 </header>
 
-<a href="https://ferreirafabio.github.io/autoresearch-automl" class="featured-banner">
-  <span class="tag">New</span><h3>Can LLMs Beat Classical HPO? A Study on autoresearch <span class="arrow">→</span></h3>
-  <p>Interactive demo: benchmarking 9 HPO methods on Karpathy's autoresearch task.</p>
-</a>
+<div class="featured-section">
+  <p class="featured-section-title">Featured</p>
+  <a href="https://ferreirafabio.github.io/autoresearch-automl" class="featured-banner">
+    <span class="tag">New</span><h3>Can LLMs Beat Classical HPO? A Study on autoresearch <span class="arrow">→</span></h3>
+    <p>Interactive demo: benchmarking 9 HPO methods on Karpathy's autoresearch task.</p>
+  </a>
+  <a href="https://streikcheck.de/" class="featured-banner">
+    <h3>streikcheck.de <span class="arrow">→</span></h3>
+    <p>AI-powered Germany-wide strike tracker. Filter by state, sector, time; alerts via email or Telegram.</p>
+  </a>
+</div>
 
 <div id="content">
   <div class="loading">
