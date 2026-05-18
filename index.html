@@ -362,7 +362,11 @@ async function loadReadme() {
       if (!r.ok) continue;
       const md = await r.text();
       marked.setOptions({ gfm: true, breaks: false });
-      el.innerHTML = marked.parse(md);
+      // Drop the leading bio paragraph (job/affiliation) from the rendered
+      // page; it lives in the README for GitHub but the Pages site already
+      // shows the role in the header subtitle.
+      const stripped = md.replace(/^[\s\S]*?(?=\n##? |\nCurrent projects)/, '');
+      el.innerHTML = marked.parse(stripped);
       // Open external links in a new tab
       el.querySelectorAll('a').forEach(a => {
         if (a.href && !a.href.startsWith(window.location.origin) && !a.href.startsWith('#')) {
