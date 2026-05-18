@@ -112,6 +112,7 @@
     background: white;
     color: #333;
     padding: 0.95em 1.2em;
+    padding-right: 5em;
     border-radius: 10px;
     border-left: 3px solid #E91E63;
     margin: 1.2em 0 1.8em;
@@ -120,6 +121,21 @@
     text-decoration: none;
     display: block;
     transition: all 0.2s ease;
+    position: relative;
+  }
+  .featured-banner .date {
+    position: absolute;
+    top: 0.95em; right: 1.2em;
+    font-size: 0.72em; font-weight: 500;
+    color: #999; letter-spacing: 0.02em;
+    white-space: nowrap;
+  }
+  @media (max-width: 600px) {
+    .featured-banner { padding-right: 1.2em; }
+    .featured-banner .date {
+      position: static; display: block;
+      margin-top: 0.35em;
+    }
   }
   .featured-banner:hover {
     box-shadow: 0 4px 14px rgba(233, 30, 99, 0.12);
@@ -212,16 +228,19 @@
 <div class="featured-section">
   <p class="featured-section-title">Featured</p>
   <a href="https://ferreirafabio.github.io/autoresearch-automl" class="featured-banner">
+    <span class="date">May 2026</span>
     <span class="tag">New</span><h3>Can LLMs Beat Classical HPO? A Study on autoresearch <span class="arrow">→</span></h3>
     <p>Interactive demo: benchmarking 9 HPO methods on Karpathy's autoresearch task.</p>
   </a>
-  <a href="https://streikcheck.de/" class="featured-banner">
-    <h3>streikcheck.de <span class="arrow">→</span></h3>
-    <p>AI-powered Germany-wide strike tracker. Filter by state, sector, time; alerts via email or Telegram.</p>
-  </a>
   <a href="https://ferreirafabio.github.io/olmo3-multilingual-dolci-sft-progression/" class="featured-banner">
+    <span class="date">May 2026</span>
     <h3>OLMo3 Multilingual Dolci SFT Checkpoint Viewer <span class="arrow">→</span></h3>
     <p>Side-by-side completions across OLMo3 SFT checkpoints in 7 EU languages.</p>
+  </a>
+  <a href="https://streikcheck.de/" class="featured-banner">
+    <span class="date">April 2026</span>
+    <h3>streikcheck.de <span class="arrow">→</span></h3>
+    <p>AI-powered Germany-wide strike tracker. Filter by state, sector, time; alerts via email or Telegram.</p>
   </a>
 </div>
 
